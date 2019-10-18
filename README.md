@@ -155,6 +155,11 @@ public class IDnowAutoIdentActivity extends AppCompatActivity implements IDnowSD
 
 Only the most recent versions are included here. Please contact us if you are having trouble upgrading from an older version.
 
+#### 3.13.0 - 18 Oct 2019
+- improved user feedback if the ID document text is not read correctly
+- improved user feedback if the person's photo in the document is not clearly visible
+- customer configuration for the progress spinner color
+
 #### 3.12.0 - 2 Oct 2019
 - new scanning bar in the OCR, security features, selfie and liveness detection steps
 - arrow style change in the liveness detection step

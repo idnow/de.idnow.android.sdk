@@ -155,6 +155,11 @@ public class IDnowAutoIdentActivity extends AppCompatActivity implements IDnowSD
 
 Only the most recent versions are included here. Please contact us if you are having trouble upgrading from an older version.
 
+#### 3.14.0 - 13 Nov 2019
+- enhanced user experience in liveness detection and security feature steps
+- user feedback for liveness detection
+- camera focus fixes on specific devices
+
 #### 3.13.0 - 18 Oct 2019
 - improved user feedback if the ID document text is not read correctly
 - improved user feedback if the person's photo in the document is not clearly visible

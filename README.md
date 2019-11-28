@@ -155,6 +155,9 @@ public class IDnowAutoIdentActivity extends AppCompatActivity implements IDnowSD
 
 Only the most recent versions are included here. Please contact us if you are having trouble upgrading from an older version.
 
+#### 3.15.1 - 28 Nov 2019
+- improved user feedback for liveness detection
+
 #### 3.15.0 - 25 Nov 2019
 - user feedback in case the user is under age for the service
 - improved user feedback if the ID card is expired

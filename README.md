@@ -30,7 +30,7 @@ The following permissions and features are used by the IDnow library:
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
 <uses-feature android:name="android.hardware.camera" android:required="true" />
-<uses-feature android:name="android.hardware.camera.autofocus" android:required="true" />
+<uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
 <uses-feature android:glEsVersion="0x00020000" android:required="true" />
 ```
 
@@ -119,23 +119,25 @@ android {
 ```Java
 public class IDnowAutoIdentActivity extends AppCompatActivity implements IDnowSDK.IDnowResultListener {
 
-    private static IDnowSDK IDNOW_SDK = null;
-    private static IDnowConfig IDNOW_CONFIG = null;
+    private IDnowSDK idnowSdk; 
     private static String TAG = IDnowAutoIdentActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-    
-        IDNOW_SDK = IDnowSDK.getInstance();
-        IDNOW_CONFIG = new IDnowConfig();
-    
-        IDNOW_SDK.initialize(this, IDNOW_CONFIG);
+
+        IDnowConfig idnowConfig = IDnowConfig.Builder.getInstance()
+                .withLanguage("de") // this line is not necessary, please see below
+                .build();
+
+        idnowSdk = IDnowSDK.getInstance();
+        idnowSdk.initialize(this, idnowConfig); 
     }
     
+    // call this from somewhere, like a click listener
     private void startIdent() {
         String identId = "TS3-XXXXX";
-        IDNOW_SDK.startIdent(identId, this);
+        idnowSdk.startIdent(identId, this);
     }
     
     @Override
@@ -151,11 +153,18 @@ public class IDnowAutoIdentActivity extends AppCompatActivity implements IDnowSD
 }
 ```
 
+Using withLanguage("lang_code") you can configure the IDnow library to use a specific language. These ISO 639-1 language codes are currently supported: bg (Bulgarian), cs (Czech), da (Danish), de (German), el (Greek), en (English), es (Spanish), et (Estonian), fi (Finnish), fr (French), hr (Croatian), hu (Hungarian), it (Italian), ja (Japanese), ka (Georgian), ko (Korean), lt (Lithuanian), lv (Latvian), nb (Norwegian), nl (Dutch), pl (Polish), pt (Portuguese), ro (Romanian), ru (Russian), sk (Slovak), sl (Slovenian), sr (Serbian), sv (Swedish), tr (Turkish), zh (Chinese).
+
 ## Changelog
 
 Only the most recent versions are included here. Please contact us if you are having trouble upgrading from an older version.
 
-#### 3.15.1 - 2 Dec 2019
+#### 3.16.0 - 19 Dec 2019
+- added support for language selection
+- removed camera autofocus requirement in the manifest
+- minor UI improvements and bugfixes
+
+#### 3.15.1 - 28 Nov 2019
 - improved user feedback for liveness detection
 
 #### 3.15.0 - 25 Nov 2019

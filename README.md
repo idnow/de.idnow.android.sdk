@@ -5,7 +5,6 @@
   - [Android manifest](#android-manifest)
 - [Integration](#integration)
   - [AAR library](#aar-library)
-  - [Additional dependencies](#additional-dependencies)
   - [RenderScript](#renderscript)
 - [Usage example](#usage-example)
 - [Changelog](#changelog)
@@ -42,52 +41,24 @@ The recommended build tool is Gradle, so the examples below refer to build.gradl
 
 ### AAR library
 
-Copy the idnow-platform-{version}.aar file into your app's libs folder (usually /app/libs). Whenever you see "{version}" used here, replace with the actual library version you want included, such as "3.12.0".
-
-Add the "flatDir" block to the main (project-level) build.gradle, like this:
+In your project's build.gradle, besides whatever other repositories you already have, include this URL:
 
 ```
 allprojects {
     repositories {
-        ...
-
-        flatDir {
-            dirs 'libs'
+        maven {
+            url "https://raw.githubusercontent.com/idnow/de.idnow.android.sdk/master"
         }
     }
 }
 ```
 
-Include these lines in the app module's build.gradle:
+In the app module's build.gradle, besides whatever other dependencies you already have, include such an "implementation" line:
 
 ```
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation(name: 'idnow-platform-{version}', ext: 'aar')
-    ...
+    implementation 'de.idnow.android.sdk:idnow-platform:3.17.0' // replace "3.17.0" with the version you want to include
 }
-```
-
-### Additional dependencies
-
-The IDnow framework depends on the presence of several other libraries. Please make sure to include the following list of dependencies into the app module's build.gradle file:
-
-```
-implementation 'com.android.support:recyclerview-v7:28.0.0'
-implementation 'com.android.support:appcompat-v7:28.0.0'
-implementation 'com.android.support.constraint:constraint-layout:1.1.3'
-
-implementation 'com.squareup.okhttp3:okhttp:3.11.0'
-implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
-implementation 'com.squareup.retrofit2:retrofit:2.4.0'
-implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
-
-implementation 'org.msgpack:msgpack-core:0.8.16'
-implementation 'org.msgpack:jackson-dataformat-msgpack:0.8.16'
-
-implementation 'io.sentry:sentry-android:1.7.5'
-
-api 'com.google.guava:guava:28.0-android'
 ```
 
 ### RenderScript
@@ -158,6 +129,10 @@ Using withLanguage("lang_code") you can configure the IDnow library to use a spe
 ## Changelog
 
 Only the most recent versions are included here. Please contact us if you are having trouble upgrading from an older version.
+
+#### 3.17.0 - 22 Jan 2020
+- simplified the SDK integration by making the library dependencies private
+- UI improvements and bug fixes
 
 #### 3.16.0 - 19 Dec 2019
 - added support for language selection

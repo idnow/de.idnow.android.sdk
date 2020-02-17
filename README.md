@@ -130,6 +130,12 @@ Using withLanguage("lang_code") you can configure the IDnow library to use a spe
 
 Only the most recent versions are included here. Please contact us if you are having trouble upgrading from an older version.
 
+#### 3.18.0 - 17 Feb 2020
+- improvements in liveness detection
+- improvements in selfie step
+- visible Zone with MRZ check is also possible for one sided documents now
+- minor UI improvements and bugfixes
+
 #### 3.17.0 - 23 Jan 2020
 - simplified the SDK integration by making the library dependencies private
 - UI improvements and bug fixes

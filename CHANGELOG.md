@@ -2,6 +2,12 @@
 
 Only the most recent versions are included here. Please contact us if you are having trouble upgrading from an older version.
 
+#### 3.19.0 - 2 Mar 2020
+- integration of new animations to improve overall look and feel, as well as user experience
+- improvement of security feature detection 
+- improvement of flows with multiple documents
+- multiple bug fixes
+
 #### 3.18.0 - 17 Feb 2020
 - improvements in liveness detection
 - improvements in selfie step

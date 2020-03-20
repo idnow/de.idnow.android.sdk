@@ -2,6 +2,13 @@
 
 Only the most recent versions are included here. Please contact us if you are having trouble upgrading from an older version.
 
+#### 3.20.0 - 20 Mar 2020
+- icons and animations are now configurable per customer
+- added possibility of manual selfie, if configured
+- integrated new liveness version
+- fixed crashes during selfie step
+- minor bug fixes and performance improvements
+
 #### 3.19.0 - 2 Mar 2020
 - integration of new animations to improve overall look and feel, as well as user experience
 - improvement of security feature detection 

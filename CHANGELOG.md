@@ -2,6 +2,10 @@
 
 Only the most recent versions are included here. Please contact us if you are having trouble upgrading from an older version.
 
+#### 3.20.1 - 22 Apr 2020
+- fonts are now configurable per customer
+- minor bug fixes and performance improvements
+
 #### 3.20.0 - 20 Mar 2020
 - icons and animations are now configurable per customer
 - added possibility of manual selfie, if configured

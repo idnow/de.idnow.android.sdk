@@ -14,6 +14,7 @@ The IDnow Android Archive Library (AAR file) can be used to incorporate the IDno
 
 ### Requirements
 
+- AndroidX for IDnow library version 4.0.0 and beyond: https://developer.android.com/jetpack/androidx
 - minSdkVersion: 21 (Android 5 Lollipop)
 - targetSdkVersion: it's recommended to specify the latest Android API level
 - not supported: devices and emulators based on the x86 architecture
@@ -37,6 +38,8 @@ If you are using Android Studio, you don't need to specify the above in the host
 
 ## Integration
 
+AndroidX is needed starting with version 4.0.0 of our library. If you haven't migrated to AndroidX yet, please use an older library version, such as 3.20.1.
+
 The recommended build tool is Gradle, so the examples below refer to build.gradle files.
 
 ### AAR library
@@ -57,7 +60,7 @@ In the app module's build.gradle, besides whatever other dependencies you alread
 
 ```
 dependencies {
-    implementation 'de.idnow.android.sdk:idnow-platform:3.17.0' // replace "3.17.0" with the version you want to include
+    implementation 'de.idnow.android.sdk:idnow-platform:4.0.0' // replace "4.0.0" with the version you want to include
 }
 ```
 

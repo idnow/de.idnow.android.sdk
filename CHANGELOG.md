@@ -1,85 +1,91 @@
 ## Changelog
 
-Only the most recent versions are included here. Please contact us if you are having trouble upgrading from an older version.
+
+#### 4.0.0 - 29 Jun 2020
+- Breaking change: Replaced the Support Library with AndroidX
+- New liveness detection service
+- Redesigned UI and UX
+- Support for paper-based driver's license
+- Various bug fixes
 
 #### 3.20.1 - 22 Apr 2020
-- fonts are now configurable per customer
-- minor bug fixes and performance improvements
+- Fonts are now configurable per customer
+- Minor bug fixes and performance improvements
 
 #### 3.20.0 - 20 Mar 2020
-- icons and animations are now configurable per customer
-- added possibility of manual selfie, if configured
-- integrated new liveness version
-- fixed crashes during selfie step
-- minor bug fixes and performance improvements
+- Icons and animations are now configurable per customer
+- Added possibility of manual selfie, if configured
+- Integrated new liveness version
+- Fixed crashes during selfie step
+- Minor bug fixes and performance improvements
 
 #### 3.19.0 - 2 Mar 2020
-- integration of new animations to improve overall look and feel, as well as user experience
-- improvement of security feature detection 
-- improvement of flows with multiple documents
-- multiple bug fixes
+- Integration of new animations to improve overall look and feel, as well as user experience
+- Improvement of security feature detection 
+- Improvement of flows with multiple documents
+- Multiple bug fixes
 
 #### 3.18.0 - 17 Feb 2020
-- improvements in liveness detection
-- improvements in selfie step
-- visible Zone with MRZ check is also possible for one sided documents now
-- minor UI improvements and bugfixes
+- Improvements in liveness detection
+- Improvements in selfie step
+- Visible Zone with MRZ check is also possible for one sided documents now
+- Minor UI improvements and bugfixes
 
 #### 3.17.0 - 23 Jan 2020
-- simplified the SDK integration by making the library dependencies private
+- Simplified the SDK integration by making the library dependencies private
 - UI improvements and bug fixes
 
 #### 3.16.0 - 19 Dec 2019
-- added support for language selection
-- removed camera autofocus requirement in the manifest
-- minor UI improvements and bugfixes
+- Added support for language selection
+- Removed camera autofocus requirement in the manifest
+- Minor UI improvements and bugfixes
 
 #### 3.15.1 - 28 Nov 2019
-- improved user feedback for liveness detection
+- Improved user feedback for liveness detection
 
 #### 3.15.0 - 25 Nov 2019
-- user feedback in case the user is under age for the service
-- improved user feedback if the ID card is expired
-- minor bugfixes
+- User feedback in case the user is under age for the service
+- Improved user feedback if the ID card is expired
+- Minor bugfixes
 
 #### 3.14.0 - 13 Nov 2019
-- enhanced user experience in liveness detection and security feature steps
-- user feedback for liveness detection
-- camera focus fixes on specific devices
+- Enhanced user experience in liveness detection and security feature steps
+- User feedback for liveness detection
+- Camera focus fixes on specific devices
 
 #### 3.13.0 - 18 Oct 2019
-- improved user feedback if the ID document text is not read correctly
-- improved user feedback if the person's photo in the document is not clearly visible
-- customer configuration for the progress spinner color
+- Improved user feedback if the ID document text is not read correctly
+- Improved user feedback if the person's photo in the document is not clearly visible
+- Customer configuration for the progress spinner color
 
 #### 3.12.0 - 2 Oct 2019
-- new scanning bar in the OCR, security features, selfie and liveness detection steps
-- arrow style change in the liveness detection step
-- consistent icons between VideoIdent and AutoIdent
-- camera focus improvements
-- customer configuration option to turn off the intro screen
-- host app support for minifyEnabled (Proguard, R8)
+- New scanning bar in the OCR, security features, selfie and liveness detection steps
+- Arrow style change in the liveness detection step
+- Consistent icons between VideoIdent and AutoIdent
+- Camera focus improvements
+- Customer configuration option to turn off the intro screen
+- Host app support for minifyEnabled (Proguard, R8)
 
 #### 3.11.0 - 11 Sep 2019
-- identification with any country's identity document
-- resumable identification, even after the app has been put to the background
-- configurable Finish screen
-- bandwidth improvements for security features
-- translation improvements, especially for Italian
+- Identification with any country's identity document
+- Resumable identification, even after the app has been put to the background
+- Configurable Finish screen
+- Bandwidth improvements for security features
+- Translation improvements, especially for Italian
 
 #### 3.10.0 - 16 Aug 2019
-- layout improvements in the intro, instructions, verification and T&C screens
-- stability improvements
-- minor bugfixes
+- Layout improvements in the intro, instructions, verification and T&C screens
+- Stability improvements
+- Minor bugfixes
 
 #### 3.9.0 - 31 Jul 2019
-- randomness in liveness detection
-- new design for the T&C screen
-- compliance with the Play Store's 64-bit requirement
-- removed support for the x86 architecture
+- Randomness in liveness detection
+- New design for the T&C screen
+- Compliance with the Play Store's 64-bit requirement
+- Removed support for the x86 architecture
 
 #### 3.8.0 - 17 Jun 2019
-- pre-filled Ident ID when opening the app from a link
-- customer configuration option for the progress circle color
-- improvements related to the camera flashlight
-- layout improvements in various screens
+- Pre-filled Ident ID when opening the app from a link
+- Customer configuration option for the progress circle color
+- Improvements related to the camera flashlight
+- Layout improvements in various screens

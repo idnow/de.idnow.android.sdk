@@ -1,6 +1,10 @@
 ## Changelog
 
 
+#### 4.1.0 - 2 Jul 2020
+- Support for paper-based ID Cards and Residence Permits
+- Various bug fixes
+
 #### 4.0.0 - 29 Jun 2020
 - Breaking change: Replaced the Support Library with AndroidX
 - New liveness detection service

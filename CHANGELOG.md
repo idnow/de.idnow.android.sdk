@@ -1,6 +1,14 @@
 ## Changelog
 
 
+#### 4.2.0 - 27 Aug 2020
+- Option to manually take pictures of documents
+- Option for users to specify a reason when cancelling
+- New UX design for document selection
+- User feedback improvements
+- Language translation updates
+- Various bug fixes
+
 #### 4.1.0 - 2 Jul 2020
 - Support for paper-based ID Cards and Residence Permits
 - Various bug fixes

@@ -1,6 +1,9 @@
 ## Changelog
 
 
+#### 4.2.1 - 31 Aug 2020
+- Various bug fixes
+
 #### 4.2.0 - 27 Aug 2020
 - Option to manually take pictures of documents
 - Option for users to specify a reason when cancelling

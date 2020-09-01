@@ -17,7 +17,7 @@ The IDnow Android Archive Library (AAR file) can be used to incorporate the IDno
 - AndroidX for IDnow library version 4.0.0 and beyond: https://developer.android.com/jetpack/androidx
 - minSdkVersion: 21 (Android 5 Lollipop)
 - targetSdkVersion: it's recommended to specify the latest Android API level
-- not supported: devices and emulators based on the x86 architecture
+- **not supported: devices and emulators based on the x86 architecture**
 
 ### Android manifest
 

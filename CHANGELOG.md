@@ -1,6 +1,12 @@
 ## Changelog
 
 
+#### 4.3.0 - 28 Sep 2020
+- Additional customization options
+- Updated translations
+- Redesigned UX on some screens
+- Various bug fixes
+
 #### 4.2.1 - 31 Aug 2020
 - Various bug fixes
 

@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 4.4.0 - 13 Oct 2020
+- Image quality enhancements
+- Various bug fixes
 
 #### 4.3.0 - 28 Sep 2020
 - Additional customization options

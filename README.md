@@ -60,7 +60,7 @@ In the app module's build.gradle, besides whatever other dependencies you alread
 
 ```
 dependencies {
-    implementation 'de.idnow.android.sdk:idnow-platform:4.3.0' // replace "4.3.0" with the version you want to include
+    implementation 'de.idnow.android.sdk:idnow-platform:4.4.0' // replace "4.4.0" with the version you want to include
 }
 ```
 

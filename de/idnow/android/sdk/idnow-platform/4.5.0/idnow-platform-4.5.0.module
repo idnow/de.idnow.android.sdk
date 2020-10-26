@@ -1,0 +1,155 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "de.idnow.android.sdk",
+    "module": "idnow-platform",
+    "version": "4.5.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.0.1",
+      "buildId": "bcqbbauo6vfnhdlckfpd5nqzge"
+    }
+  },
+  "variants": [
+    {
+      "name": "runtime",
+      "attributes": {
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.2.2"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "logging-interceptor",
+          "version": {
+            "requires": "4.2.2"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "retrofit",
+          "version": {
+            "requires": "2.6.2"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "converter-gson",
+          "version": {
+            "requires": "2.6.2"
+          }
+        },
+        {
+          "group": "org.msgpack",
+          "module": "msgpack-core",
+          "version": {
+            "requires": "0.8.18"
+          }
+        },
+        {
+          "group": "org.msgpack",
+          "module": "jackson-dataformat-msgpack",
+          "version": {
+            "requires": "0.8.18"
+          }
+        },
+        {
+          "group": "com.airbnb.android",
+          "module": "lottie",
+          "version": {
+            "requires": "3.4.0"
+          }
+        },
+        {
+          "group": "androidx.recyclerview",
+          "module": "recyclerview",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.legacy",
+          "module": "legacy-support-v4",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "io.sentry",
+          "module": "sentry-android",
+          "version": {
+            "requires": "1.7.28"
+          }
+        },
+        {
+          "group": "androidx.constraintlayout",
+          "module": "constraintlayout",
+          "version": {
+            "requires": "1.1.3"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "28.0-android"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "idnow-platform-4.5.0.aar",
+          "url": "idnow-platform-4.5.0.aar",
+          "size": 16779343,
+          "sha512": "4fdbf8c77d29d33336982d296f5248e3b28a596246dca13d06c9b0fbeb43d3acd032a108ea4ea73b116f2fa2f452ce01346af4098a2258b68ee65d935dbbe959",
+          "sha256": "90cc90cb5b57b4eaaba2001950c34c22db908a06c5af2598a68b7a5d2d380f32",
+          "sha1": "148108239a755390c9a5ad04fe2b41e6b855df3b",
+          "md5": "75165a921b013b39f9d57bf34ec7e7b4"
+        }
+      ]
+    },
+    {
+      "name": "api",
+      "attributes": {
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "28.0-android"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "idnow-platform-4.5.0.aar",
+          "url": "idnow-platform-4.5.0.aar",
+          "size": 16779343,
+          "sha512": "4fdbf8c77d29d33336982d296f5248e3b28a596246dca13d06c9b0fbeb43d3acd032a108ea4ea73b116f2fa2f452ce01346af4098a2258b68ee65d935dbbe959",
+          "sha256": "90cc90cb5b57b4eaaba2001950c34c22db908a06c5af2598a68b7a5d2d380f32",
+          "sha1": "148108239a755390c9a5ad04fe2b41e6b855df3b",
+          "md5": "75165a921b013b39f9d57bf34ec7e7b4"
+        }
+      ]
+    }
+  ]
+}

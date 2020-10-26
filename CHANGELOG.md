@@ -1,5 +1,10 @@
 ## Changelog
 
+#### 4.5.0 - 26 Oct 2020
+- New branding
+- UX improvements
+- Various bug fixes
+
 #### 4.4.0 - 13 Oct 2020
 - Image quality enhancements
 - Various bug fixes

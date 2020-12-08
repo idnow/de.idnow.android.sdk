@@ -1,0 +1,162 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "de.idnow.android.sdk",
+    "module": "idnow-platform",
+    "version": "4.6.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.0.1",
+      "buildId": "th36njstrvdgjijht3rp7ar4ye"
+    }
+  },
+  "variants": [
+    {
+      "name": "runtime",
+      "attributes": {
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.2.2"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "logging-interceptor",
+          "version": {
+            "requires": "4.2.2"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "retrofit",
+          "version": {
+            "requires": "2.6.2"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "converter-gson",
+          "version": {
+            "requires": "2.6.2"
+          }
+        },
+        {
+          "group": "org.msgpack",
+          "module": "msgpack-core",
+          "version": {
+            "requires": "0.8.18"
+          }
+        },
+        {
+          "group": "org.msgpack",
+          "module": "jackson-dataformat-msgpack",
+          "version": {
+            "requires": "0.8.18"
+          }
+        },
+        {
+          "group": "com.airbnb.android",
+          "module": "lottie",
+          "version": {
+            "requires": "3.4.0"
+          }
+        },
+        {
+          "group": "androidx.recyclerview",
+          "module": "recyclerview",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.legacy",
+          "module": "legacy-support-v4",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "io.sentry",
+          "module": "sentry-android",
+          "version": {
+            "requires": "1.7.28"
+          }
+        },
+        {
+          "group": "androidx.constraintlayout",
+          "module": "constraintlayout",
+          "version": {
+            "requires": "1.1.3"
+          }
+        },
+        {
+          "group": "ch.acra",
+          "module": "acra-core",
+          "version": {
+            "requires": "5.7.0"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "28.0-android"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "idnow-platform-4.6.0.aar",
+          "url": "idnow-platform-4.6.0.aar",
+          "size": 16984335,
+          "sha512": "16dc4aff51231fb938ebb8232ae51910bce9da2aec034780b34acf7a627d88da27f54f9deb39563c0e117cfcc3abdb05632436cb9fc42b7bdd7f423fb34f5d77",
+          "sha256": "b1096deee488f2ad8871c4bf64ee6e1923155d62b633885abda26b5b84d431f0",
+          "sha1": "628eb76daae9af07d6e8847287c5585a563cc6f5",
+          "md5": "fbbffae16e1b25862a334fce9b05f480"
+        }
+      ]
+    },
+    {
+      "name": "api",
+      "attributes": {
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "28.0-android"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "idnow-platform-4.6.0.aar",
+          "url": "idnow-platform-4.6.0.aar",
+          "size": 16984335,
+          "sha512": "16dc4aff51231fb938ebb8232ae51910bce9da2aec034780b34acf7a627d88da27f54f9deb39563c0e117cfcc3abdb05632436cb9fc42b7bdd7f423fb34f5d77",
+          "sha256": "b1096deee488f2ad8871c4bf64ee6e1923155d62b633885abda26b5b84d431f0",
+          "sha1": "628eb76daae9af07d6e8847287c5585a563cc6f5",
+          "md5": "fbbffae16e1b25862a334fce9b05f480"
+        }
+      ]
+    }
+  ]
+}

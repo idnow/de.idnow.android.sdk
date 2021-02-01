@@ -1,5 +1,10 @@
 ## Changelog
 
+#### 4.7.0 - 21 Jan 2021
+- User feedback improvements
+- Stability and performance improvements
+- Various bug fixes
+
 #### 4.6.0 - 8 Dec 2020
 - Improvements to manual picture taking process
 - Improvements to the document scanning process

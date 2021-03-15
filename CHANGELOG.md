@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 4.7.3 - 15 Mar 2021
+- Bug fixes
+
 #### 4.7.2 - 11 Mar 2021
 - UI optimizations
 - Stability and performance improvements

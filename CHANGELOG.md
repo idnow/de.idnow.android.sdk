@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 4.8.1 - 3 May 2021
+- Stability and performance improvements
+
 #### 4.8.0 - 15 Apr 2021
 - Enhancement of the feedback provided when scanning a document
 - Various accessibility improvements

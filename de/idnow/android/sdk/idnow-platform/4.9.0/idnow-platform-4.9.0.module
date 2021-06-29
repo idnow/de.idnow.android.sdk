@@ -1,0 +1,183 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "de.idnow.android.sdk",
+    "module": "idnow-platform",
+    "version": "4.9.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.0.1",
+      "buildId": "yqmznbfifvbprnrnibz5a5ovyi"
+    }
+  },
+  "variants": [
+    {
+      "name": "runtime",
+      "attributes": {
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.recyclerview",
+          "module": "recyclerview",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.legacy",
+          "module": "legacy-support-v4",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.constraintlayout",
+          "module": "constraintlayout",
+          "version": {
+            "requires": "1.1.3"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.2.1"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.2.2"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "logging-interceptor",
+          "version": {
+            "requires": "4.2.2"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "retrofit",
+          "version": {
+            "requires": "2.6.2"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "converter-gson",
+          "version": {
+            "requires": "2.6.2"
+          }
+        },
+        {
+          "group": "org.msgpack",
+          "module": "msgpack-core",
+          "version": {
+            "requires": "0.8.18"
+          }
+        },
+        {
+          "group": "org.msgpack",
+          "module": "jackson-dataformat-msgpack",
+          "version": {
+            "requires": "0.8.18"
+          }
+        },
+        {
+          "group": "com.airbnb.android",
+          "module": "lottie",
+          "version": {
+            "requires": "3.4.0"
+          }
+        },
+        {
+          "group": "io.sentry",
+          "module": "sentry-android",
+          "version": {
+            "requires": "1.7.28"
+          }
+        },
+        {
+          "group": "ch.acra",
+          "module": "acra-core",
+          "version": {
+            "requires": "5.7.0"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "28.0-android"
+          }
+        },
+        {
+          "group": "de.idnow.insights",
+          "module": "idnow-android-insights-sdk",
+          "version": {
+            "requires": "1.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "idnow-platform-4.9.0.aar",
+          "url": "idnow-platform-4.9.0.aar",
+          "size": 17554951,
+          "sha512": "3c0ad19fdf56572724b0acea2368031092f90f7f94becd9c201348fa66a26f889cecad23ddf2b6a90956fafe8001ab2116cad0557199f5c3c48c7c82c9481294",
+          "sha256": "903c0b1b59d32ae507bc5805db7d2f1d1336b488acee6f86e29bd801f3f31ed3",
+          "sha1": "d10a56ab3a00efe0fc4ec59eadda203d14359411",
+          "md5": "d3dcb6ed73996be2760577f3fde4c670"
+        }
+      ]
+    },
+    {
+      "name": "api",
+      "attributes": {
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "28.0-android"
+          }
+        },
+        {
+          "group": "de.idnow.insights",
+          "module": "idnow-android-insights-sdk",
+          "version": {
+            "requires": "1.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "idnow-platform-4.9.0.aar",
+          "url": "idnow-platform-4.9.0.aar",
+          "size": 17554951,
+          "sha512": "3c0ad19fdf56572724b0acea2368031092f90f7f94becd9c201348fa66a26f889cecad23ddf2b6a90956fafe8001ab2116cad0557199f5c3c48c7c82c9481294",
+          "sha256": "903c0b1b59d32ae507bc5805db7d2f1d1336b488acee6f86e29bd801f3f31ed3",
+          "sha1": "d10a56ab3a00efe0fc4ec59eadda203d14359411",
+          "md5": "d3dcb6ed73996be2760577f3fde4c670"
+        }
+      ]
+    }
+  ]
+}

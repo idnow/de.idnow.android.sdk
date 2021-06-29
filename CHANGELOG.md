@@ -1,5 +1,10 @@
 ## Changelog
 
+#### 4.9.0 - 29 Jun 2021
+- E-Documents scanning via NFC (as optional feature), please contact IDnow for more info
+- Enhancement of the feedback provided when scanning a document
+- Various bug fixes
+
 #### 4.8.1 - 3 May 2021
 - Stability and performance improvements
 

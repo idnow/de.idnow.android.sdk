@@ -12,6 +12,11 @@
 
 The IDnow Android Archive Library (AAR file) can be used to incorporate the IDnow AutoIdent platform into Android host apps.
 
+Starting with version 4.9.0, we are providing the NFC capability to scan e-documents via 2 flavours of our IDnow library to provide the best flexibility for our customers.
+
+- In case of interest in using the NFC capability, please reach out to IDnow to obtain the needed dependencies and further information on integration and usage.
+- In case you would like to continue using our newest version of the library without NFC, please go through the rest of the documentation and follow the integration guide below.
+
 ### Requirements
 
 - AndroidX for IDnow library version 4.0.0 and beyond: https://developer.android.com/jetpack/androidx
@@ -60,7 +65,7 @@ In the app module's build.gradle, besides whatever other dependencies you alread
 
 ```
 dependencies {
-    implementation 'de.idnow.android.sdk:idnow-platform:4.8.1' // replace "4.8.1" with the version you want to include
+    implementation 'de.idnow.android.sdk:idnow-platform:4.9.0' // replace "4.9.0" with the version you want to include
 }
 ```
 

@@ -1,5 +1,10 @@
 ## Changelog
 
+#### 4.12.0 - 2 Oct 2021
+- Bank Transfer feature
+- Several improvements and optimizations
+- Bug fixes
+
 #### 4.11.2 - 29 Sep 2021
 - New eSigning feature
 - Enhanced support for customizing app animations

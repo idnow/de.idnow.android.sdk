@@ -1,5 +1,12 @@
 ## Changelog
 
+#### 4.13.0 - 26 Nov 2021
+- Improved bank transfer and esigning
+- Improved liveness
+- Improved camera service
+- Increased minimum API version to 23
+- Fixed various bugs
+
 #### 4.12.0 - 2 Oct 2021
 - Bank Transfer feature
 - Several improvements and optimizations

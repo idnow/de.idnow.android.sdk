@@ -20,7 +20,7 @@ Starting with version 4.9.0, we are providing the NFC capability to scan e-docum
 ### Requirements
 
 - AndroidX for IDnow library version 4.0.0 and beyond: https://developer.android.com/jetpack/androidx
-- minSdkVersion: 21 (Android 5 Lollipop)
+- minSdkVersion: 23 (Android 6 Marshmallow)
 - targetSdkVersion: it's recommended to specify the latest Android API level
 - **not supported: devices and emulators based on the x86 architecture**
 
@@ -40,6 +40,14 @@ The following permissions and features are used by the IDnow library:
 ```
 
 If you are using Android Studio, you don't need to specify the above in the host app's manifest. These are already present in the IDnow library manifest, and will be included during the build process according to these manifest merge rules: https://developer.android.com/studio/build/manifest-merge.html
+
+In the "application" element you also need to add the "extractNativeLibs" attribute, next to whatever other attributes you are using there.
+
+```
+<application
+    android:extractNativeLibs="true"
+    ...
+```
 
 ## Integration
 
@@ -65,7 +73,7 @@ In the app module's build.gradle, besides whatever other dependencies you alread
 
 ```
 dependencies {
-    implementation 'de.idnow.android.sdk:idnow-platform:4.12.0' // replace "4.12.0" with the version you want to include
+    implementation 'de.idnow.android.sdk:idnow-platform:4.13.0' // replace "4.13.0" with the version you want to include
 }
 ```
 

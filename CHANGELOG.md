@@ -1,5 +1,11 @@
 ## Changelog
 
+#### 4.14.0 - 11 Jan 2022
+- Improved the document capture screen layout to improve focus
+- Updated several dependencies for a better integration 
+- Increased compileSdkVersion and targetSdkVersion to API 31 (Android 12)
+- Updated Proguard rules
+
 #### 4.13.0 - 26 Nov 2021
 - Improved bank transfer and esigning
 - Improved liveness

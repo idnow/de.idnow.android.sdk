@@ -6,6 +6,7 @@
 - [Integration](#integration)
   - [AAR library](#aar-library)
   - [RenderScript](#renderscript)
+  - [AndroidX core library](#androidx-core)
 - [Usage example](#usage-example)
 
 ## Overview
@@ -98,7 +99,19 @@ android {
         pickFirst 'lib/armeabi-v7a/libRSSupport.so'
     }    
 }
+```
 
+### AndroidX core library
+
+Starting with version 4.14.0 of our library, we target API 31 (Android 12). It seems that the AndroidX Core library version 1.7.0 is incompatible with apps that target lower API levels. So, if your app does not specify at least 31 for compileSdkVersion and targetSdkVersion, please add these lines to the app module's build.gradle file:
+
+```
+configurations.all {
+  resolutionStrategy {
+    force 'androidx.core:core:1.6.0' // for Java projects
+    force 'androidx.core:core-ktx:1.6.0' // for Kotlin projects
+  }
+}
 ```
 
 ## Usage example

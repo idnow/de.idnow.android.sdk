@@ -1,5 +1,9 @@
 ## Changelog
 
+#### 4.14.1 - 24 Jan 2022
+- Removed deprecated jCenter repository and switched to mavenCentral
+- Various bug fixes
+
 #### 4.14.0 - 11 Jan 2022
 - Improved the document capture screen layout to improve focus
 - Updated several dependencies for a better integration 

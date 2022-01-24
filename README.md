@@ -65,10 +65,10 @@ allprojects {
     repositories {
 		...
 		mavenCentral()
-        google()
-        maven {
-            url "https://raw.githubusercontent.com/idnow/de.idnow.android.sdk/master"
-        }
+		google()
+		maven {
+			url "https://raw.githubusercontent.com/idnow/de.idnow.android.sdk/master"
+		}
 		...
     }
 }

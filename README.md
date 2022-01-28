@@ -62,15 +62,15 @@ In your project's build.gradle, besides whatever other repositories you already 
 
 ```
 allprojects {
-    repositories {
+	repositories {
 		...
 		mavenCentral()
 		google()
 		maven {
-			url "https://raw.githubusercontent.com/idnow/de.idnow.android.sdk/master"
+		url "https://raw.githubusercontent.com/idnow/de.idnow.android.sdk/master"
 		}
 		...
-    }
+	}
 }
 ```
 
@@ -78,7 +78,7 @@ In the app module's build.gradle, besides whatever other dependencies you alread
 
 ```
 dependencies {
-    implementation 'de.idnow.android.sdk:idnow-platform:4.14.1' // replace "4.14.1" with the version you want to include
+    implementation 'de.idnow.android.sdk:idnow-platform:4.14.2' // replace "4.14.2" with the version you want to include
 }
 ```
 

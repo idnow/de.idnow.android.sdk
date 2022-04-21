@@ -1,5 +1,10 @@
 ## Changelog
 
+#### 4.16.1 - 21 Apr 2022
+- Various performance improvements
+- Various bug fixes
+- Fix reported vulnerabilities due to 3rd party libraries
+
 #### 4.16.0 - 31 Mar 2022
 - Decreased minimum API version to 21
 - Improved bank transfer

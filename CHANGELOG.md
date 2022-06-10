@@ -1,5 +1,12 @@
 ## Changelog
 
+#### 4.18.1 - 10 Jun 2022
+- Improved NFC and updated dependency. Please reach out to your CS manager to get the new NFC dependency
+- Improved liveness detection step
+- Improved reference bank transfer step
+- Added the prefix “idnow_” to all local resources to avoid conflicts with similar resources in your app
+- Various bug fixes
+
 #### 4.16.1 - 21 Apr 2022
 - Various performance improvements
 - Various bug fixes

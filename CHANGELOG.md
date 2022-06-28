@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 4.18.2 - 28 Jun 2022
+- Various bug fixes
+
 #### 4.18.1 - 10 Jun 2022
 - Improved NFC and updated dependency. Please reach out to your CS manager to get the new NFC dependency
 - Improved liveness detection step

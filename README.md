@@ -6,7 +6,6 @@
 - [Integration](#integration)
   - [AAR library](#aar-library)
   - [RenderScript](#renderscript)
-  - [AndroidX core library](#androidx-core)
 - [Usage example](#usage-example)
 
 ## Overview
@@ -22,7 +21,8 @@ Starting with version 4.9.0, we are providing the NFC capability to scan e-docum
 
 - AndroidX for IDnow library version 4.0.0 and beyond: https://developer.android.com/jetpack/androidx
 - minSdkVersion: 21 (Android 5 Lollipop)
-- targetSdkVersion: it's recommended to specify the latest Android API level
+- compileSdkVersion: 31 (Android 12)
+- targetSdkVersion: 31 (Android 12)
 - **not supported: devices and emulators based on the x86 architecture**
 
 ### Android manifest
@@ -71,7 +71,7 @@ In the app module's build.gradle, besides whatever other dependencies you alread
 
 ```
 dependencies {
-    implementation 'de.idnow.android.sdk:idnow-platform:4.18.2' // replace "4.18.2" with the version you want to include
+    implementation 'de.idnow.android.sdk:idnow-platform:4.19.0' // replace "4.19.0" with the version you want to include
 }
 ```
 
@@ -95,19 +95,6 @@ android {
     packagingOptions {
         pickFirst 'lib/armeabi-v7a/libRSSupport.so'
     }    
-}
-```
-
-### AndroidX core library
-
-Starting with version 4.14.0 of our library, we target API 31 (Android 12). It seems that the AndroidX Core library version 1.7.0 is incompatible with apps that target lower API levels. So, if your app does not specify at least 31 for compileSdkVersion and targetSdkVersion, please add these lines to the app module's build.gradle file:
-
-```
-configurations.all {
-  resolutionStrategy {
-    force 'androidx.core:core:1.6.0' // for Java projects
-    force 'androidx.core:core-ktx:1.6.0' // for Kotlin projects
-  }
 }
 ```
 

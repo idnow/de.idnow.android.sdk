@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 4.19.1 - 04 Aug 2022
+- Removed 3rd party dependency (Acra)
+
 #### 4.19.0 - 03 Aug 2022
 - Added new component for verifying user phone number via OTP
 - Improved NFC and updated dependency. Please reach out to your CS manager to get the new NFC dependency

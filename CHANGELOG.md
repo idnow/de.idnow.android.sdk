@@ -1,5 +1,42 @@
 ## Changelog
 
+#### 4.19.1 - 04 Aug 2022
+- Removed 3rd party dependency (Acra)
+
+#### 4.19.0 - 03 Aug 2022
+- Added new component for verifying user phone number via OTP
+- Improved NFC and updated dependency. Please reach out to your CS manager to get the new NFC dependency
+- Various bug fixes
+
+#### 4.18.2 - 28 Jun 2022
+- Various bug fixes
+
+#### 4.18.1 - 10 Jun 2022
+- Improved NFC and updated dependency. Please reach out to your CS manager to get the new NFC dependency
+- Improved liveness detection step
+- Improved reference bank transfer step
+- Added the prefix “idnow_” to all local resources to avoid conflicts with similar resources in your app
+- Various bug fixes
+
+#### 4.16.1 - 21 Apr 2022
+- Various performance improvements
+- Various bug fixes
+- Fix reported vulnerabilities due to 3rd party libraries
+
+#### 4.16.0 - 31 Mar 2022
+- Decreased minimum API version to 21
+- Improved bank transfer
+- Updated layout of the user feedback screens
+- Various performance improvements
+- Various bug fixes
+
+#### 4.14.2 - 28 Jan 2022
+- Various bug fixes
+
+#### 4.14.1 - 24 Jan 2022
+- Removed deprecated jCenter repository and switched to mavenCentral
+- Various bug fixes
+
 #### 4.14.0 - 11 Jan 2022
 - Improved the document capture screen layout to improve focus
 - Updated several dependencies for a better integration 

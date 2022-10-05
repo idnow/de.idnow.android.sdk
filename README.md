@@ -6,7 +6,6 @@
 - [Integration](#integration)
   - [AAR library](#aar-library)
   - [RenderScript](#renderscript)
-  - [AndroidX core library](#androidx-core)
 - [Usage example](#usage-example)
 
 ## Overview
@@ -21,8 +20,9 @@ Starting with version 4.9.0, we are providing the NFC capability to scan e-docum
 ### Requirements
 
 - AndroidX for IDnow library version 4.0.0 and beyond: https://developer.android.com/jetpack/androidx
-- minSdkVersion: 23 (Android 6 Marshmallow)
-- targetSdkVersion: it's recommended to specify the latest Android API level
+- minSdkVersion: 21 (Android 5 Lollipop)
+- compileSdkVersion: 31 (Android 12)
+- targetSdkVersion: 31 (Android 12)
 - **not supported: devices and emulators based on the x86 architecture**
 
 ### Android manifest
@@ -42,13 +42,6 @@ The following permissions and features are used by the IDnow library:
 
 If you are using Android Studio, you don't need to specify the above in the host app's manifest. These are already present in the IDnow library manifest, and will be included during the build process according to these manifest merge rules: https://developer.android.com/studio/build/manifest-merge.html
 
-In the "application" element you also need to add the "extractNativeLibs" attribute, next to whatever other attributes you are using there.
-
-```
-<application
-    android:extractNativeLibs="true"
-    ...
-```
 
 ## Integration
 
@@ -62,11 +55,15 @@ In your project's build.gradle, besides whatever other repositories you already 
 
 ```
 allprojects {
-    repositories {
-        maven {
-            url "https://raw.githubusercontent.com/idnow/de.idnow.android.sdk/master"
-        }
-    }
+	repositories {
+		...
+		mavenCentral()
+		google()
+		maven {
+		url "https://raw.githubusercontent.com/idnow/de.idnow.android.sdk/master"
+		}
+		...
+	}
 }
 ```
 
@@ -74,7 +71,7 @@ In the app module's build.gradle, besides whatever other dependencies you alread
 
 ```
 dependencies {
-    implementation 'de.idnow.android.sdk:idnow-platform:4.13.0' // replace "4.13.0" with the version you want to include
+    implementation 'de.idnow.android.sdk:idnow-platform:4.19.1' // replace "4.19.1" with the version you want to include
 }
 ```
 
@@ -90,7 +87,7 @@ android {
 
     defaultConfig {
         ...
-        renderscriptTargetApi 16
+        renderscriptTargetApi 21
         renderscriptSupportModeEnabled true
         vectorDrawables.useSupportLibrary = true
     }
@@ -98,19 +95,6 @@ android {
     packagingOptions {
         pickFirst 'lib/armeabi-v7a/libRSSupport.so'
     }    
-}
-```
-
-### AndroidX core library
-
-Starting with version 4.14.0 of our library, we target API 31 (Android 12). It seems that the AndroidX Core library version 1.7.0 is incompatible with apps that target lower API levels. So, if your app does not specify at least 31 for compileSdkVersion and targetSdkVersion, please add these lines to the app module's build.gradle file:
-
-```
-configurations.all {
-  resolutionStrategy {
-    force 'androidx.core:core:1.6.0' // for Java projects
-    force 'androidx.core:core-ktx:1.6.0' // for Kotlin projects
-  }
 }
 ```
 

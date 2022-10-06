@@ -1,5 +1,13 @@
 ## Changelog
 
+#### 5.0.0 - 05 Oct 2022
+- **BREAKING CHANGE: Added new ERROR codes for SDK callback**
+- Removed SDK Application class so that the host app can define its own
+- Updated introduction screen UI
+- Enabled upload option on additional document step
+- Updated Open banking dependency
+- Various bug fixes
+
 #### 4.19.1 - 04 Aug 2022
 - Removed 3rd party dependency (Acra)
 

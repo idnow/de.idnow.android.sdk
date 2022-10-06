@@ -7,6 +7,8 @@
   - [AAR library](#aar-library)
   - [RenderScript](#renderscript)
 - [Usage example](#usage-example)
+- [SDK error codes](#sdk-error-codes)
+  - [How to deal with errors](#how-to-deal-with-errors)
 
 ## Overview
 
@@ -71,7 +73,7 @@ In the app module's build.gradle, besides whatever other dependencies you alread
 
 ```
 dependencies {
-    implementation 'de.idnow.android.sdk:idnow-platform:4.19.1' // replace "4.19.1" with the version you want to include
+    implementation 'de.idnow.android.sdk:idnow-platform:5.0.0' // replace "5.0.0" with the version you want to include
 }
 ```
 
@@ -126,6 +128,23 @@ public class IDnowAutoIdentActivity extends AppCompatActivity implements IDnowSD
     
     @Override
     public void onIdentResult(IDnowResult iDnowResult) {
+        if (iDnowResult.getResultType() == IDnowResult.ResultType.FINISHED) {
+            Log.d(TAG, "Finished");
+        } else if (iDnowResult.getResultType() == IDnowResult.ResultType.CANCELLED) {
+            Log.d(TAG, "Cancelled: " + iDnowResult.getStatusCode());
+        } else if (iDnowResult.getResultType() == IDnowResult.ResultType.ERROR) {
+            Log.d(TAG, "Error: " + iDnowResult.getStatusCode());
+        }
+    }
+}
+```
+
+Using withLanguage("lang_code") you can configure the IDnow library to use a specific language. These ISO 639-1 language codes are currently supported: bg (Bulgarian), cs (Czech), da (Danish), de (German), el (Greek), en (English), es (Spanish), et (Estonian), fi (Finnish), fr (French), hr (Croatian), hu (Hungarian), it (Italian), ja (Japanese), ka (Georgian), ko (Korean), lt (Lithuanian), lv (Latvian), nb (Norwegian), nl (Dutch), pl (Polish), pt (Portuguese), ro (Romanian), ru (Russian), sk (Slovak), sl (Slovenian), sr (Serbian), sv (Swedish), tr (Turkish), zh (Chinese).
+
+If you are using an SDK version lower than 5.0.0, the returned result should be interpreted like this:
+
+```Java
+    public void onIdentResult(IDnowResult iDnowResult) {
         if (iDnowResult.getIDnowStatusCode() == IDnowResult.IDnowStatusCode.FINISHED) {
             Log.d(TAG, "Finished");
         } else if (iDnowResult.getIDnowStatusCode() == IDnowResult.IDnowStatusCode.CANCELLED) {
@@ -134,7 +153,39 @@ public class IDnowAutoIdentActivity extends AppCompatActivity implements IDnowSD
             Log.d(TAG, "Error: " + iDnowResult.getMessage());
         }
     }
-}
 ```
 
-Using withLanguage("lang_code") you can configure the IDnow library to use a specific language. These ISO 639-1 language codes are currently supported: bg (Bulgarian), cs (Czech), da (Danish), de (German), el (Greek), en (English), es (Spanish), et (Estonian), fi (Finnish), fr (French), hr (Croatian), hu (Hungarian), it (Italian), ja (Japanese), ka (Georgian), ko (Korean), lt (Lithuanian), lv (Latvian), nb (Norwegian), nl (Dutch), pl (Polish), pt (Portuguese), ro (Romanian), ru (Russian), sk (Slovak), sl (Slovenian), sr (Serbian), sv (Swedish), tr (Turkish), zh (Chinese).
+## SDK error codes
+
+In case of IDnowResult.ResultType.ERROR, the IDnowResult.getStatusCode() method returns one of the error codes below.
+
+```
+"E100" --> Ident code syntax incorrect
+"E101" --> Ident code not found
+"E102" --> Ident code expired
+"E103" --> Ident code already completed
+"E110" --> Get ident info failed; invalid response
+"E111" --> Get ident info failed; server reachability
+"E130" --> Get ident resources failed; invalid response
+"E131" --> Get ident resources failed; server reachability
+"E140" --> Get name failed; invalid response
+"E141" --> Get name failed; server reachability
+"E142" --> Get name failed; full name missing
+"E150" --> Start ident failed; invalid response
+"E151" --> Start ident failed; server reachability
+"E152" --> Start ident failed; missing session key
+"E153" --> Start ident failed; wrong ident method
+"E160" --> Get Emirates NFC resources failed; invalid response
+"E161" --> Get Emirates NFC resources failed; server reachability
+"E170" --> Socket connection force closed
+"E171" --> Process force closed
+"E180" --> Missing application context
+```
+
+### How to deal with errors
+
+- For E102 it is recommended to create another ident, and restart the process with the new ident code.
+- For E103 it is recommended to show a screen to the user with the message that they have submitted all info needed and that they should wait for the final result.
+- For E170 it is recommended to notify the user that the ident process timed out or was started on a different device and ask them to try again.
+- E180 is to alert the host app if the context has been lost (OS restarted/killed SDK process).
+- For all other error codes it is recommended to show a generic error for the user and ask them to try again by restarting the process.

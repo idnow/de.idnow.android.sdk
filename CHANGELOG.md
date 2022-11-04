@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 5.0.1 - 04 Nov 2022
+- Various bug fixes and improvements
+
 #### 5.0.0 - 05 Oct 2022
 - **BREAKING CHANGE: Added new ERROR codes for SDK callback**
 - Removed SDK Application class so that the host app can define its own

@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 5.0.2 - 28 Nov 2022
+- Various bug fixes and improvements
+
 #### 5.0.1 - 04 Nov 2022
 - Various bug fixes and improvements
 

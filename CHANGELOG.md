@@ -1,5 +1,9 @@
 ## Changelog
 
+#### 5.0.3 - 16 Dec 2022
+- Various bug fixes and improvements
+- Updated Gradle Plugin to `v.7.2.2` and Gradle Distribution URL to `v7.3.3`
+
 #### 5.0.2 - 28 Nov 2022
 - Various bug fixes and improvements
 

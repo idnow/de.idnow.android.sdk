@@ -1,6 +1,6 @@
 ## Changelog
 
-#### 5.0.4 - 12 Dec 2023
+#### 5.0.4 - 12 Jan 2023
 - Various bug fixes and improvements
 - Updated liveness detection dependency
 

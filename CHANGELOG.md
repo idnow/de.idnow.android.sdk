@@ -1,5 +1,19 @@
 ## Changelog
 
+#### 5.0.4 - 12 Jan 2023
+- Various bug fixes and improvements
+- Updated liveness detection dependency
+
+#### 5.0.3 - 16 Dec 2022
+- Various bug fixes and improvements
+- Updated Gradle Plugin to `v.7.2.2` and Gradle Distribution URL to `v7.3.3`
+
+#### 5.0.2 - 28 Nov 2022
+- Various bug fixes and improvements
+
+#### 5.0.1 - 04 Nov 2022
+- Various bug fixes and improvements
+
 #### 5.0.0 - 05 Oct 2022
 - **BREAKING CHANGE: Added new ERROR codes for SDK callback**
 - Removed SDK Application class so that the host app can define its own

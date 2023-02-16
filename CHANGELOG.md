@@ -1,5 +1,15 @@
 ## Changelog
 
+#### 5.1.0 - 16 Feb 2023
+- Improved QES signing flow
+- Configurable abort reasons
+- Option to disable failure screen
+- Contextual failure message on failure screen
+- Support for "${transactionNumber}" variable in success and failure URLs
+- Updated dependencies for bank transfer and NFC scanning
+- Support for Android 13
+- Various bug fixes
+
 #### 5.0.4 - 12 Jan 2023
 - Various bug fixes and improvements
 - Updated liveness detection dependency

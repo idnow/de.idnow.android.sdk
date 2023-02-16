@@ -23,8 +23,8 @@ Starting with version 4.9.0, we are providing the NFC capability to scan e-docum
 
 - AndroidX for IDnow library version 4.0.0 and beyond: https://developer.android.com/jetpack/androidx
 - minSdkVersion: 21 (Android 5 Lollipop)
-- compileSdkVersion: 31 (Android 12)
-- targetSdkVersion: 31 (Android 12)
+- compileSdkVersion: 33 (Android 13)
+- targetSdkVersion: 33 (Android 13)
 - **not supported: devices and emulators based on the x86 architecture**
 
 ### Android manifest
@@ -36,9 +36,14 @@ The following permissions and features are used by the IDnow library:
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.FLASHLIGHT" />
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.NFC" />
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+<uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+<uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
 <uses-feature android:name="android.hardware.camera" android:required="true" />
 <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+<uses-feature android:name="android.hardware.nfc" android:required="false" />
 <uses-feature android:glEsVersion="0x00020000" android:required="true" />
 ```
 
@@ -73,7 +78,7 @@ In the app module's build.gradle, besides whatever other dependencies you alread
 
 ```
 dependencies {
-    implementation 'de.idnow.android.sdk:idnow-platform:5.0.4' // replace "5.0.4" with the version you want to include
+    implementation 'de.idnow.android.sdk:idnow-platform:5.1.0' // replace "5.1.0" with the version you want to include
 }
 ```
 

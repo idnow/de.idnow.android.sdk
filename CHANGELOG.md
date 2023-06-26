@@ -1,5 +1,9 @@
 ## Changelog
 
+#### 5.4.0 - 26 Jun 2023
+- Various bug fixes
+- Liveness solution updated to 9.6.28
+
 #### 5.2.0 - 30 Mar 2023
 - Updated language translations for BG, TR, UK, RU, RO, PL, FI
 - Harmonized lottie filenames between Android and iOS

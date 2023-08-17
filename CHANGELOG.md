@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 5.5.0 - 17 Aug 2023
+- Various bug fixes
+
 #### 5.4.0 - 26 Jun 2023
 - Various bug fixes
 - Liveness solution updated to 9.6.28

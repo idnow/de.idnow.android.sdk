@@ -1,5 +1,12 @@
 ## Changelog
 
+#### 5.6.0 - 1 Sep 2023
+- Added support for Android 14
+- Updated NFC scanning dependency
+- Updated minSDK to 23
+- Updated targetSDK to 34
+- Bug fixes
+
 #### 5.5.0 - 17 Aug 2023
 - Various bug fixes
 

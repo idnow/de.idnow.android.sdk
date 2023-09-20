@@ -2,6 +2,7 @@
 
 - [Overview](#overview)
   - [Requirements](#requirements)
+  - [Compatibility, End of Support, End of Life](#compatibility-matrix)
   - [Android manifest](#android-manifest)
 - [Integration](#integration)
   - [AAR library](#aar-library)
@@ -9,7 +10,6 @@
 - [Usage example](#usage-example)
 - [SDK error codes](#sdk-error-codes)
   - [How to deal with errors](#how-to-deal-with-errors)
-- [Compatibility, End of Support, End of Life](#compatibility-matrix)
 
 ## Overview
 
@@ -19,6 +19,9 @@ Starting with version 4.9.0, we are providing the NFC capability to scan e-docum
 
 - In case of interest in using the NFC capability, please reach out to IDnow to obtain the needed dependencies and further information on integration and usage.
 - In case you would like to continue using our newest version of the library without NFC, please go through the rest of the documentation and follow the integration guide below.
+
+### Compatibility Matrix
+Please refer to the following link to find information about compatibility, end-of-support (EOS) and end-of-life (EOL) dates pertaining to our products: [IDnow Compatibility Matrix: Browser & OS Compatibility guide](https://www.idnow.io/developers/compatibility-overview/)
 
 ### Requirements
 
@@ -195,6 +198,3 @@ In case of IDnowResult.ResultType.ERROR, the IDnowResult.getStatusCode() method 
 - For E170 it is recommended to notify the user that the ident process timed out or was started on a different device and ask them to try again.
 - E180 is to alert the host app if the context has been lost (OS restarted/killed SDK process).
 - For all other error codes it is recommended to show a generic error for the user and ask them to try again by restarting the process.
-
-### Compatibility Matrix
-Please refer to the following link to find information about compatibility, end-of-support (EOS) and end-of-life (EOL) dates pertaining to our products: [IDnow Compatibility Matrix: Browser & OS Compatibility guide](https://www.idnow.io/developers/compatibility-overview/)

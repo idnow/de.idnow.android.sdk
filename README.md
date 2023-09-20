@@ -2,6 +2,7 @@
 
 - [Overview](#overview)
   - [Requirements](#requirements)
+  - [Compatibility, End of Support, End of Life](#compatibility-matrix)
   - [Android manifest](#android-manifest)
 - [Integration](#integration)
   - [AAR library](#aar-library)
@@ -18,6 +19,9 @@ Starting with version 4.9.0, we are providing the NFC capability to scan e-docum
 
 - In case of interest in using the NFC capability, please reach out to IDnow to obtain the needed dependencies and further information on integration and usage.
 - In case you would like to continue using our newest version of the library without NFC, please go through the rest of the documentation and follow the integration guide below.
+
+### Compatibility Matrix
+Please refer to the following link to find information about compatibility, end-of-support (EOS) and end-of-life (EOL) dates pertaining to our products: [IDnow Compatibility Matrix: Browser & OS Compatibility guide](https://www.idnow.io/developers/compatibility-overview/)
 
 ### Requirements
 

@@ -9,6 +9,7 @@
 - [Usage example](#usage-example)
 - [SDK error codes](#sdk-error-codes)
   - [How to deal with errors](#how-to-deal-with-errors)
+- [Compatibility, End of Support, End of Life](#compatibility-matrix)
 
 ## Overview
 
@@ -194,3 +195,6 @@ In case of IDnowResult.ResultType.ERROR, the IDnowResult.getStatusCode() method 
 - For E170 it is recommended to notify the user that the ident process timed out or was started on a different device and ask them to try again.
 - E180 is to alert the host app if the context has been lost (OS restarted/killed SDK process).
 - For all other error codes it is recommended to show a generic error for the user and ask them to try again by restarting the process.
+
+### Compatibility Matrix
+Please refer to the following link to find information about compatibility, end-of-support (EOS) and end-of-life (EOL) dates pertaining to our products: [IDnow Compatibility Matrix: Browser & OS Compatibility guide](https://www.idnow.io/developers/compatibility-overview/)

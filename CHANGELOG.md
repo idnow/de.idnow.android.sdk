@@ -1,5 +1,9 @@
 ## Changelog
 
+#### 5.7.0 - 18 Jan 2024
+- Image capture improvements using TensorFlow
+- Updated Liveness component
+
 #### 5.6.0 - 1 Sep 2023
 - Added support for Android 14
 - Updated NFC scanning dependency

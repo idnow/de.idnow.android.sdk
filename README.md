@@ -86,6 +86,13 @@ dependencies {
 }
 ```
 
+#### NOTE: We also supply a special build of our AI SDK, which is a 1:1 copy of the official version, but it does not contain the FintecSystems SDK. This one can be integrated using the next line:
+```
+dependencies {
+    implementation 'de.idnow.android.sdk:idnow-platform-no-fintec-XS2A:5.7.0' // replace "5.7.0" with the version you want to include
+}
+```
+
 ### RenderScript
 
 Additionally, the IDnow library needs `RenderScript` support for fast image processing. More info: https://developer.android.com/guide/topics/renderscript/compute

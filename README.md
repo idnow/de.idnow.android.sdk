@@ -67,6 +67,8 @@ But this functionality is being used only for customers who enabled this via cus
 See [here a video recording](video/foreground_service_permission.mp4) where this permission is being requested at runtime.
 In case Google Play Store asks you more information about this permission or proof that this is being requested, you can send them this video.
 
+More info about understanding the foreground service media projection can be found [here](https://support.google.com/googleplay/android-developer/answer/13392821).
+
 ## Integration
 
 AndroidX is needed starting with version 4.0.0 of our library. If you haven't migrated to AndroidX yet, please use an older library version, such as 3.20.1.

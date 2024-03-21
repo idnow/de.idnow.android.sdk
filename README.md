@@ -64,7 +64,12 @@ Starting with Android 14, we are required to add this special foreground service
 Since our SDK provides multiple functionalities based on customer requirements, a particular functionality used by some customers can record the device's screen to capture additional proof of the captured document.
 But this functionality is being used only for customers who enabled this via customer configuration in order to be PVID compliant.
 
-See [here a video recording](video/foreground_service_permission.mp4) where this permission is being requested at runtime.
+See below a video where this permission is being requested at runtime.
+
+<video width="600" height="800" controls>
+  <source src="video/foreground_service_permission.mp4" type="video/mp4">
+</video>
+
 In case Google Play Store asks you more information about this permission or proof that this is being requested, you can send them this video.
 
 ## Integration

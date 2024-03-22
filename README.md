@@ -4,6 +4,7 @@
   - [Requirements](#requirements)
   - [Compatibility, End of Support, End of Life](#compatibility-matrix)
   - [Android manifest](#android-manifest)
+  - [Foreground Service Permission Explanation](#foreground_service_media_projection)
 - [Integration](#integration)
   - [AAR library](#aar-library)
   - [RenderScript](#renderscript)
@@ -36,23 +37,37 @@ Please refer to the following link to find information about compatibility, end-
 The following permissions and features are used by the IDnow library:
 
 ```
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
 <uses-permission android:name="android.permission.CAMERA" />
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.FLASHLIGHT" />
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 <uses-permission android:name="android.permission.NFC" />
 <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+<!-- Android 13 Permissions -->
 <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-
+<!-- Android 14 Permissions -->
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
+<!-- Features -->
 <uses-feature android:name="android.hardware.camera" android:required="true" />
 <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
-<uses-feature android:name="android.hardware.nfc" android:required="false" />
 <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+<uses-feature android:name="android.hardware.nfc" android:required="false" />
 ```
 
 If you are using Android Studio, you don't need to specify the above in the host app's manifest. These are already present in the IDnow library manifest, and will be included during the build process according to these manifest merge rules: https://developer.android.com/studio/build/manifest-merge.html
 
+### FOREGROUND_SERVICE_MEDIA_PROJECTION
+Starting with Android 14, we are required to add this special foreground service permission in our Manifest file, which applies automatically to all apps which include this SDK.
+
+Since our SDK provides multiple functionalities based on customer requirements, a particular functionality used by some customers can record the device's screen to capture additional proof of the captured document.
+But this functionality is being used only for customers who enabled this via customer configuration in order to be PVID compliant.
+
+See [here a video recording](video/foreground_service_permission.mp4) where this permission is being requested at runtime.
+In case Google Play Store asks you more information about this permission or proof that this is being requested, you can send them this video.
+
+More info about understanding the foreground service media projection can be found [here](https://support.google.com/googleplay/android-developer/answer/13392821).
 
 ## Integration
 

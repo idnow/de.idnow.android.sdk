@@ -27,7 +27,7 @@ Please refer to the following link to find information about compatibility, end-
 ### Requirements
 
 - AndroidX for IDnow library version 4.0.0 and beyond: https://developer.android.com/jetpack/androidx
-- minSdkVersion: 23 (Android 6 Marshmallow)
+- minSdkVersion: 24 (Android 7 Nougat)
 - compileSdkVersion: 34 (Android 14)
 - targetSdkVersion: 34 (Android 14)
 - **not supported: devices and emulators based on the x86 architecture**
@@ -97,14 +97,14 @@ In the app module's build.gradle, besides whatever other dependencies you alread
 
 ```
 dependencies {
-    implementation 'de.idnow.android.sdk:idnow-platform:5.7.0' // replace "5.7.0" with the version you want to include
+    implementation 'de.idnow.android.sdk:idnow-platform:5.8.0' // replace "5.8.0" with the version you want to include
 }
 ```
 
 #### NOTE: We also supply a special build of our AI SDK, which is a 1:1 copy of the official version, but it does not contain the FintecSystems SDK. This one can be integrated using the next line:
 ```
 dependencies {
-    implementation 'de.idnow.android.sdk:idnow-platform-no-fintec-XS2A:5.7.0' // replace "5.7.0" with the version you want to include
+    implementation 'de.idnow.android.sdk:idnow-platform-no-fintec-XS2A:5.8.0' // replace "5.8.0" with the version you want to include
 }
 ```
 
@@ -120,7 +120,7 @@ android {
 
     defaultConfig {
         ...
-        renderscriptTargetApi 21
+        renderscriptTargetApi 24
         renderscriptSupportModeEnabled true
         vectorDrawables.useSupportLibrary = true
     }

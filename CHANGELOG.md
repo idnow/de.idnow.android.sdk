@@ -1,5 +1,12 @@
 ## Changelog
 
+#### 5.8.0 - 04 Jun 2024
+- User experience improvements, improved error messages
+- Updated dependent components - NFC reading component, TensorFlow
+- Improved camera permission requests
+- Analytics and reporting improvements
+- Fixed some crashes and other Bugfixes
+
 #### 5.7.0 - 18 Jan 2024
 - Image capture improvements using TensorFlow
 - Updated Liveness component

@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 5.8.1 - 12 Jul 2024
+- Critical hotfix for Ident token issue for IDnow Test environment. Due to a change in the Ident-ID schema for our Test environment, older SDK versions will no longer work with the Test environment. Please use this SDK version (and above) in order to continue using AutoIdent with the IDnow Test environment. There is no impact on the Prod environment.
+
 #### 5.8.0 - 04 Jun 2024
 - User experience improvements, improved error messages
 - Updated dependent components - NFC reading component, TensorFlow
@@ -104,7 +107,7 @@
 
 #### 4.14.0 - 11 Jan 2022
 - Improved the document capture screen layout to improve focus
-- Updated several dependencies for a better integration 
+- Updated several dependencies for a better integration
 - Increased compileSdkVersion and targetSdkVersion to API 31 (Android 12)
 - Updated Proguard rules
 
@@ -213,7 +216,7 @@
 
 #### 3.19.0 - 2 Mar 2020
 - Integration of new animations to improve overall look and feel, as well as user experience
-- Improvement of security feature detection 
+- Improvement of security feature detection
 - Improvement of flows with multiple documents
 - Multiple bug fixes
 

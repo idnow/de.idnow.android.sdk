@@ -1,5 +1,10 @@
 ## Changelog
 
+#### 5.9.0 - 23 Jul 2024
+- Removed READ_MEDIA_IMAGES and READ_MEDIA_VIDEO permissions. Since there is only a limited use of photo and video files, these are now managed using the system picker.
+- Several Bug fixes
+- Updated NFC scanning component
+
 #### 5.8.1 - 12 Jul 2024
 - Critical hotfix for Ident token issue for IDnow Test environment. Due to a change in the Ident-ID schema for our Test environment, older SDK versions will no longer work with the Test environment. Please use this SDK version (and above) in order to continue using AutoIdent with the IDnow Test environment. There is no impact on the Prod environment.
 

@@ -1,5 +1,12 @@
 ## Changelog
 
+#### 5.10.0 - 21 Aug 2024
+- Optimizations and fallback for the capture quality detection feature
+- App analytics improvements
+- Support for new configs for Finish screen
+- Technical refactoring and fixes
+- Bug fixes related to NFC scanning
+
 #### 5.9.0 - 23 Jul 2024
 - Removed READ_MEDIA_IMAGES and READ_MEDIA_VIDEO permissions. Since there is only a limited use of photo and video files, these are now managed using the system picker.
 - Several Bug fixes

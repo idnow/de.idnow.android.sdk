@@ -170,6 +170,12 @@ public class IDnowAutoIdentActivity extends AppCompatActivity implements IDnowSD
 
 Using withLanguage("lang_code") you can configure the IDnow library to use a specific language. These ISO 639-1 language codes are currently supported: bg (Bulgarian), cs (Czech), da (Danish), de (German), el (Greek), en (English), es (Spanish), et (Estonian), fi (Finnish), fr (French), hr (Croatian), hu (Hungarian), it (Italian), ja (Japanese), ka (Georgian), ko (Korean), lt (Lithuanian), lv (Latvian), nb (Norwegian), nl (Dutch), pl (Polish), pt (Portuguese), ro (Romanian), ru (Russian), sk (Slovak), sl (Slovenian), sr (Serbian), sv (Swedish), tr (Turkish), zh (Chinese).
 
+### Note:
+Our recommended best practice for optimal user experience is to allow the SDK to use the device language instead of the lang_code.
+
+### Language limitations
+Some components that rely on 3rd party technologies such as Biometric Liveness or NFC scanning do not support the dynamic localization and use the device language.
+
 If you are using an SDK version lower than 5.0.0, the returned result should be interpreted like this:
 
 ```Java

@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 5.11.0 - 26 Sep 2024
+- Bug fixes
+
 #### 5.10.0 - 21 Aug 2024
 - Optimizations and fallback for the capture quality detection feature
 - App analytics improvements

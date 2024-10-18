@@ -108,7 +108,7 @@ dependencies {
 
 ### RenderScript
 
-Starting with v5.12.0, the `RenderScript` library has been removed. So, the below code is only require for version *5.11.0* or lower.
+Starting with v5.12.0, the `RenderScript` library has been removed. So, the below code is only required for version *5.11.0* or lower.
 
 *Note:* When updating to the v5.12.0 version, make sure to remove the below code from your app's `build.gradle` file.
 

@@ -1,5 +1,10 @@
 ## Changelog
 
+#### 5.12.0 - 18 Ocr 2024
+- Support for Android 15
+- Updated NFC scanning component
+- Bug fixes
+
 #### 5.11.0 - 26 Sep 2024
 - Bug fixes
 

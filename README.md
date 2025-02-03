@@ -136,6 +136,13 @@ android {
 ## Usage example
 
 ```Java
+// Imports for the IDnow SDK
+import de.idnow.core.IDnowConfig;
+import de.idnow.core.IDnowResult;
+import de.idnow.core.IDnowSDK;
+import de.idnow.core.IDnowSDK.IDnowResultListener;
+
+
 public class IDnowAutoIdentActivity extends AppCompatActivity implements IDnowSDK.IDnowResultListener {
 
     private IDnowSDK idnowSdk; 

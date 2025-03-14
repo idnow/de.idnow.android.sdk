@@ -1,6 +1,14 @@
 ## Changelog
 
-#### 5.12.0 - 18 Ocr 2024
+#### 5.13.0 - 14 Mar 2025
+- Release notes github:
+- Unissey liveness
+- Support for previewing multiple contract documents in the QES Signing flow
+- Updated NFC scanning component
+- Improved Tensorflow UX
+- Bug fixes
+
+#### 5.12.0 - 18 Oct 2024
 - Support for Android 15
 - Updated NFC scanning component
 - Bug fixes

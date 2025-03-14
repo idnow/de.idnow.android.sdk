@@ -1,11 +1,10 @@
 ## Changelog
 
 #### 5.13.0 - 14 Mar 2025
-- Release notes github:
-- Unissey liveness
-- Support for previewing multiple contract documents in the QES Signing flow
+- New passive liveness solution
+- Preview multiple contract documents in the Signing process
 - Updated NFC scanning component
-- Improved Tensorflow UX
+- Improved Document capture UX with Tensorflow
 - Bug fixes
 
 #### 5.12.0 - 18 Oct 2024

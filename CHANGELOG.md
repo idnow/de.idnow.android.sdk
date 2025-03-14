@@ -1,6 +1,13 @@
 ## Changelog
 
-#### 5.12.0 - 18 Ocr 2024
+#### 5.13.0 - 14 Mar 2025
+- New passive liveness solution
+- Preview multiple contract documents in the Signing process
+- Updated NFC scanning component
+- Improved Document capture UX with Tensorflow
+- Bug fixes
+
+#### 5.12.0 - 18 Oct 2024
 - Support for Android 15
 - Updated NFC scanning component
 - Bug fixes

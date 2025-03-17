@@ -9,7 +9,7 @@
   - [AAR library](#aar-library)
   - [RenderScript](#renderscript)
 - [Usage example](#usage-example)
-- [Integrate the NFC dependency](-integrate-the-nfc-dependency)
+- [Integrate the NFC dependency](#integrate-the-nfc-dependency)
 - [SDK error codes](#sdk-error-codes)
   - [How to deal with errors](#how-to-deal-with-errors)
 
@@ -19,7 +19,7 @@ The IDnow Android Archive Library (AAR file) can be used to incorporate the IDno
 
 Starting with version 4.9.0, we are providing the NFC capability to scan e-documents via 2 flavours of our IDnow library to provide the best flexibility for our customers.
 
-- In case of interest in using the NFC capability, please reach out to IDnow to obtain the needed dependencies and further information on integration and usage. Read more about how to [Integrate the NFC dependency](-ntegrate-the-nfc-dependency)
+- In case of interest in using the NFC capability, please reach out to IDnow to obtain the needed dependencies and further information on integration and usage. Read more about how to [Integrate the NFC dependency](#integrate-the-nfc-dependency)
 - In case you would like to continue using our newest version of the library without NFC, please go through the rest of the documentation and follow the integration guide below.
 
 ### Compatibility Matrix

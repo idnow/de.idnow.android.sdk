@@ -17,13 +17,13 @@
 
 The IDnow Android Archive Library (AAR file) can be used to incorporate the IDnow AutoIdent platform into Android host apps.
 
-Starting with version 4.9.0, we are providing the NFC capability to scan e-documents via 2 flavours of our IDnow library to provide the best flexibility for our customers.
+Starting with version 4.9.0, the AutoIdent SDK supports NFC scanning to read data from the chip on e-documents. The AutoIdent SDK is available in 2 flavours, with NFC feature and without NFC, providing the best flexibility for different use cases of our customers. We recommend using the NFC feature for the best security, fraud prevention and user experience.
 
-- In case of interest in using the NFC capability, please reach out to IDnow to obtain the needed dependencies and further information on integration and usage. Read more about how to [Integrate the NFC dependency](#integrate-the-nfc-dependency)
+- To use the NFC feature, please reach out to your IDnow contact or IDnow Support (support@idnow.io) and obtain the required NFC dependencies. For information about the integration and usage, please refer to the section: [Integrate the NFC dependency](#integrate-the-nfc-dependency)
 - In case you would like to continue using our newest version of the library without NFC, please go through the rest of the documentation and follow the integration guide below.
 
 ### Compatibility Matrix
-Please refer to the following link to find information about compatibility, end-of-support (EOS) and end-of-life (EOL) dates pertaining to our products: [IDnow Compatibility Matrix: Browser & OS Compatibility guide](https://www.idnow.io/developers/compatibility-overview/)
+Please refer to the following link to find information about current versions, compatibility, end-of-support (EOS) and end-of-life (EOL) dates pertaining to our products: [IDnow Compatibility Matrix: Browser & OS Compatibility guide](https://www.idnow.io/developers/compatibility-overview/)
 
 ### Requirements
 
@@ -176,8 +176,8 @@ public class IDnowAutoIdentActivity extends AppCompatActivity implements IDnowSD
 Using withLanguage("lang_code") you can configure the IDnow library to use a specific language. These ISO 639-1 language codes are currently supported: bg (Bulgarian), cs (Czech), da (Danish), de (German), el (Greek), en (English), es (Spanish), et (Estonian), fi (Finnish), fr (French), hr (Croatian), hu (Hungarian), it (Italian), ja (Japanese), ka (Georgian), ko (Korean), lt (Lithuanian), lv (Latvian), nb (Norwegian), nl (Dutch), pl (Polish), pt (Portuguese), ro (Romanian), ru (Russian), sk (Slovak), sl (Slovenian), sr (Serbian), sv (Swedish), tr (Turkish), zh (Chinese).
 
 ### Integrate the NFC dependency
-After reaching out to Customer Support requesting for the NFC dependency to integrate in your application, you will receive an archive.
-This archive will be compatible with a specific AI SDK version and onwards, until a new NFC dependency will be updated. (e.g. the name of the archive will contain the keywords `for AI SDK v5.13.0` which means that this NFC dependency is only usable starting with AI v5.13.0 onwards, until a new NFC library will be released).
+After contacting Customer Support with a request for the NFC package, you will receive an archive to integrate into your application.
+This archive is compatible with the corresponding AI SDK version and onwards, until a new or updated version of the NFC library is released. (For example, if the name of the archive contains the keywords `for AI SDK v5.13.0`, it'd mean that this NFC library is compatible with AI SDK v5.13.0+ onwards, until an updated version of the NFC library is released).
 
 **Note:** this NFC dependency is compatible with both our AI SDK flavours: `idnow-platform` and `idnow-platform-no-fintec-XS2A`
 

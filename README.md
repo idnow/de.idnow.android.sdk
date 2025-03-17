@@ -179,6 +179,8 @@ Using withLanguage("lang_code") you can configure the IDnow library to use a spe
 After reaching out to Customer Support requesting for the NFC dependency to integrate in your application, you will receive an archive.
 This archive will be compatible with a specific AI SDK version and onwards, until a new NFC dependency will be updated. (e.g. the name of the archive will contain the keywords `for AI SDK v5.13.0` which means that this NFC dependency is only usable starting with AI v5.13.0 onwards, until a new NFC library will be released).
 
+**Note:** this NFC dependency is compatible with both our AI SDK flavours: `idnow-platform` and `idnow-platform-no-fintec-XS2A`
+
 The contents of the received archive will contain:
 - detailed instructions file on how to set-up the NFC dependency + fixes on potential build issues which you might encounter based on your local setup
 - AAR files for NFC dependency to include in your app
@@ -202,7 +204,7 @@ repositories {
   //...
 }
 ```
-- the above `aar` file require some transitive dependencies, which you need to add manually in your `app/build.gradle` file:
+- the above `aar` files require some transitive dependencies, which you need to add manually in your `app/build.gradle` file:
 ```groovy
     //ReadID Dependencies
     //iddoc connector

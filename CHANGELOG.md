@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 5.13.1 - 18 Mar 2025
+- Hotfix for failure to record liveness session
+
 #### 5.13.0 - 14 Mar 2025
 - New passive liveness solution
 - Preview multiple contract documents in the Signing process

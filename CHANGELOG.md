@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 5.13.2 - 27 Mar 2025
+- Added additional logging for Security Feature step
+
 #### 5.13.1 - 18 Mar 2025
 - Hotfix for failure to record liveness session
 

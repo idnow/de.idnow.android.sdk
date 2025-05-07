@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 5.13.3 - 7 May 2025
+- Fixed issue with opening links in the Signing screen
+
 #### 5.13.2 - 27 Mar 2025
 - Added additional logging for Security Feature step
 

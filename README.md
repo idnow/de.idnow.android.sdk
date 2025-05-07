@@ -96,14 +96,14 @@ In the app module's build.gradle, besides whatever other dependencies you alread
 
 ```
 dependencies {
-    implementation 'de.idnow.android.sdk:idnow-platform:5.13.2' // replace "5.13.2" with the version you want to include
+    implementation 'de.idnow.android.sdk:idnow-platform:5.13.3' // replace "5.13.3" with the version you want to include
 }
 ```
 
 #### NOTE: We also supply a special build of our AI SDK, which is a 1:1 copy of the official version, but it does not contain the FintecSystems SDK. This one can be integrated using the next line:
 ```
 dependencies {
-    implementation 'de.idnow.android.sdk:idnow-platform-no-fintec-XS2A:5.13.2' // replace "5.13.2" with the version you want to include
+    implementation 'de.idnow.android.sdk:idnow-platform-no-fintec-XS2A:5.13.3' // replace "5.13.3" with the version you want to include
 }
 ```
 

@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 5.13.4 - 21 May 2025
+- Fixed an issue with OTP autofill that caused the Ident flow to get stuck
+
 #### 5.13.3 - 7 May 2025
 - Fixed issue with opening links in the Signing screen
 

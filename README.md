@@ -114,7 +114,7 @@ dependencies {
 #### NOTE: We also supply a special build of our AI SDK, which is a 1:1 copy of the official version, but it does not contain the FintecSystems SDK. This one can be integrated using the next line:
 ```
 dependencies {
-    implementation 'de.idnow.android.sdk:idnow-platform-no-fintec-XS2A:5.14.4' // replace "5.13.3" with the version you want to include
+    implementation 'de.idnow.android.sdk:idnow-platform-no-fintec-XS2A:5.13.4' // replace "5.13.4" with the version you want to include
 }
 ```
 

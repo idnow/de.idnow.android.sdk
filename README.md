@@ -63,10 +63,21 @@ Starting with Android 14, we are required to add this special foreground service
 Since our SDK provides multiple functionalities based on customer requirements, a particular functionality used by some customers can record the device's screen to capture additional proof of the captured document.
 But this functionality is being used only for customers who enabled this via customer configuration in order to be PVID compliant.
 
-See [here a video recording](video/foreground_service_permission.mp4) where this permission is being requested at runtime.
-In case Google Play Store asks you more information about this permission or proof that this is being requested, you can send them this video.
+When submitting your app for review on Google Play Store, please make sure to update your App declaration in the `Monitor and Improve → Policy and programs → App Content → Declarations → Foreground service permissions`.
 
-More info about understanding the foreground service media projection can be found [here](https://support.google.com/googleplay/android-developer/answer/13392821).
+The video recording proof of this permission being requested can be found here: [https://youtube.com/shorts/8IEhcrYRVRw](https://youtube.com/shorts/8IEhcrYRVRw)
+
+The description of why this permission is included:
+```text
+To comply with EU regulations for financial institutions, our app integrates a third-party SDK, IDnow AutoIdent, in order to verify user identities during the new user onboarding process. The ID verification process involves capturing and validating the user's ID document, the user's biometric selfie and establish that a live person is performing the verification.
+There are additional regulatory requirements in some countries which mandate recording a video of the Liveness step of the ID verification process to act as proof that a live person performed the ID verification. An example of such regulation is PVID in France. It is mandatory for us to meet this requirement in order to be compliant with the regulations of specific countries, and to also prevent fraud. This permission is specifically requested during the Liveness Detection step in the identity verification flow. This step ensures the integrity of the ID verification process by capturing the user’s interaction during the liveness challenge, helping meet regulatory compliance in specific countries.
+User consent is explicitly obtained twice in the flow - once in the beginning in the Terms & Conditions screen, and again before the Liveness detection step starts with a clear explanation of why the permission is being requested, as shown in the linked demonstration video. Users have full control to allow or deny this request and can stop the recording at any time by canceling the verification process using the "X" button. The recording is strictly limited to the duration of the Liveness Detection step within the verification flow and automatically stops once the user completes or exits this step.
+Key points to note:
+- Explicit user consent is required before recording starts.
+- Users can stop the recording at any time by canceling the verification flow via the "X" button.
+- The recording is limited to the liveness step of the ID verification process and automatically stops once the step is completed or exited.
+- No background recording occurs - this feature is only active while the user is actively engaged in the verification flow.
+```
 
 ## Integration
 
@@ -96,14 +107,14 @@ In the app module's build.gradle, besides whatever other dependencies you alread
 
 ```
 dependencies {
-    implementation 'de.idnow.android.sdk:idnow-platform:5.13.3' // replace "5.13.3" with the version you want to include
+    implementation 'de.idnow.android.sdk:idnow-platform:5.13.4' // replace "5.13.4" with the version you want to include
 }
 ```
 
 #### NOTE: We also supply a special build of our AI SDK, which is a 1:1 copy of the official version, but it does not contain the FintecSystems SDK. This one can be integrated using the next line:
 ```
 dependencies {
-    implementation 'de.idnow.android.sdk:idnow-platform-no-fintec-XS2A:5.13.3' // replace "5.13.3" with the version you want to include
+    implementation 'de.idnow.android.sdk:idnow-platform-no-fintec-XS2A:5.13.4' // replace "5.13.4" with the version you want to include
 }
 ```
 

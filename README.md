@@ -64,7 +64,9 @@ Since our SDK provides multiple functionalities based on customer requirements, 
 But this functionality is being used only for customers who enabled this via customer configuration in order to be PVID compliant.
 
 When submitting your app for review on Google Play Store, please make sure to update your App declaration in the `Monitor and Improve → Policy and programs → App Content → Declarations → Foreground service permissions`.
+
 The video recording proof of this permission being requested can be found here: [https://youtube.com/shorts/8IEhcrYRVRw](https://youtube.com/shorts/8IEhcrYRVRw)
+
 The description of why this permission is included:
 ```text
 To comply with EU regulations for financial institutions, our app integrates a third-party SDK, IDnow AutoIdent, in order to verify user identities during the new user onboarding process. The ID verification process involves capturing and validating the user's ID document, the user's biometric selfie and establish that a live person is performing the verification.

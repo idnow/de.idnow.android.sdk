@@ -1,5 +1,10 @@
 ## Changelog
 
+#### 5.14.0 - 4 Jul 2025
+- Option to capture image of passport signature page
+- Updated components - Liveness, NFC scanning
+- Text translation optimizations
+
 #### 5.13.4 - 21 May 2025
 - Fixed an issue with OTP autofill that caused the Ident flow to get stuck
 

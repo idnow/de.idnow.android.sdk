@@ -9,6 +9,7 @@
   - [AAR library](#aar-library)
   - [RenderScript](#renderscript)
 - [Usage example](#usage-example)
+  - [Binding key](#binding-key)
 - [Integrate the NFC dependency](#integrate-the-nfc-dependency)
 - [SDK error codes](#sdk-error-codes)
   - [How to deal with errors](#how-to-deal-with-errors)
@@ -192,6 +193,15 @@ public class IDnowAutoIdentActivity extends AppCompatActivity implements IDnowSD
 ```
 
 Using withLanguage("lang_code") you can configure the IDnow library to use a specific language. These ISO 639-1 language codes are currently supported: bg (Bulgarian), cs (Czech), da (Danish), de (German), el (Greek), en (English), es (Spanish), et (Estonian), fi (Finnish), fr (French), hr (Croatian), hu (Hungarian), it (Italian), ja (Japanese), ka (Georgian), ko (Korean), lt (Lithuanian), lv (Latvian), nb (Norwegian), nl (Dutch), pl (Polish), pt (Portuguese), ro (Romanian), ru (Russian), sk (Slovak), sl (Slovenian), sr (Serbian), sv (Swedish), tr (Turkish), zh (Chinese).
+
+### Binding Key
+BindingKey is a additional parameter that can be sent by customers when initializing the SDK. It can be used for device binding use cases and helps establish a correlation between a user's verified identity and their mobile device. It is particularly useful for device authentication and re-authentication scenarios when users change devices. BindingKey for a completed identification can be fetched via an API endpoint and compared with the one that was used during SDK initialization.
+
+**Usage:**
+```
+//add this line after you initialized the IDnow SDK
+IDnowSDK.getInstance().setBindingKey("YOUR_BINDING KEY")
+```
 
 ### Integrate the NFC dependency
 After contacting Customer Support with a request for the NFC package, you will receive an archive to integrate into your application.

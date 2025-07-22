@@ -68,16 +68,20 @@ When submitting your app for review on Google Play Store, please make sure to up
 
 The video recording proof of this permission being requested can be found here: [https://youtube.com/shorts/8IEhcrYRVRw](https://youtube.com/shorts/8IEhcrYRVRw)
 
-The description of why this permission is included:
+The description of why this permission is included. Please use this description for submissions to Google Play:
 ```text
-To comply with EU regulations for financial institutions, our app integrates a third-party SDK, IDnow AutoIdent, in order to verify user identities during the new user onboarding process. The ID verification process involves capturing and validating the user's ID document, the user's biometric selfie and establish that a live person is performing the verification.
-There are additional regulatory requirements in some countries which mandate recording a video of the Liveness step of the ID verification process to act as proof that a live person performed the ID verification. An example of such regulation is PVID in France. It is mandatory for us to meet this requirement in order to be compliant with the regulations of specific countries, and to also prevent fraud. This permission is specifically requested during the Liveness Detection step in the identity verification flow. This step ensures the integrity of the ID verification process by capturing the user’s interaction during the liveness challenge, helping meet regulatory compliance in specific countries.
+To comply with EU regulations, our app integrates a third-party SDK, IDnow AutoIdent, in order to verify user identities during the new user onboarding process. The ID verification process involves capturing and validating the user's ID document, the user's biometric selfie and establish that a live person is performing the ID verification. 
+
+There are additional regulatory requirements in some countries which mandate recording a video of the Liveness step of the ID verification process to act as proof that a live person performed the ID verification. An example of such a regulation is PVID in France. It is mandatory for us to meet this requirement in order to be compliant with the regulations of specific countries, and to also prevent fraud. This permission is specifically requested during the Liveness Detection step in the identity verification flow. This step ensures the integrity of the ID verification process by capturing the user’s interaction during the liveness challenge, helping meet regulatory compliance in specific countries.
+
 User consent is explicitly obtained twice in the flow - once in the beginning in the Terms & Conditions screen, and again before the Liveness detection step starts with a clear explanation of why the permission is being requested, as shown in the linked demonstration video. Users have full control to allow or deny this request and can stop the recording at any time by canceling the verification process using the "X" button. The recording is strictly limited to the duration of the Liveness Detection step within the verification flow and automatically stops once the user completes or exits this step.
+
 Key points to note:
-- Explicit user consent is required before recording starts.
-- Users can stop the recording at any time by canceling the verification flow via the "X" button.
-- The recording is limited to the liveness step of the ID verification process and automatically stops once the step is completed or exited.
-- No background recording occurs - this feature is only active while the user is actively engaged in the verification flow.
+- Explicit user consent is required before recording starts
+- Users can stop the recording at any time by canceling the verification flow via the "X" button
+- The recording is limited to the liveness step of the ID verification process and automatically stops once the step is completed or exited
+- No background recording occurs - this feature is only active while the user is actively engaged in the verification flow
+
 ```
 
 ## Integration
@@ -149,7 +153,7 @@ android {
 ## Language Support
 Setting the withLanguage parameter (optional) tells the SDK the language in which the AutoIdent UI should be shown. If this parameter is not set, the SDK will first use the device language and if that is not available it falls back to English.
 
-# Language limitations
+### Language limitations
 3rd Party components such as Video Selfie and NFC scanning do not support the dynamic runtime language customization using the withLanguage parameter. These components always use the device language. **Hence, our recommended best practice for optimal user experience is to allow the SDK to use the device language instead of the preferredlanguage parameter.**
 
 

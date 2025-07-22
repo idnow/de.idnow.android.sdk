@@ -8,7 +8,7 @@
 - [Integration](#integration)
   - [AAR library](#aar-library)
   - [RenderScript](#renderscript)
-- [Language Support](#languagesupport)
+- [Language Support](#language-support)
 - [Usage example](#usage-example)
   - [Binding key](#binding-key)
 - [Integrate the NFC dependency](#integrate-the-nfc-dependency)
@@ -156,6 +156,7 @@ Setting the withLanguage parameter (optional) tells the SDK the language in whic
 
 ### Language limitations
 3rd Party components such as Video Selfie and NFC scanning do not support the dynamic runtime language customization using the withLanguage parameter. These components always use the device language. **Hence, our recommended best practice for optimal user experience is to allow the SDK to use the device language instead of the preferredlanguage parameter.**
+
 
 
 ## Usage example

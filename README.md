@@ -152,7 +152,7 @@ android {
 ```
 
 ## Language Support
-Setting the withLanguage parameter (optional) tells the SDK the language in which the AutoIdent UI should be shown. If this parameter is not set, the SDK will first use the device language and if that is not available it falls back to English.
+Setting the withLanguage parameter (optional) tells the SDK the language in which the AutoIdent UI should be shown. If this parameter is not set, the SDK will first use the device language and if that is not available it falls back to English. Also, if the specified language is not supported by our backend, then it will fall back to English. 
 
 ### Language limitations
 3rd Party components such as Video Selfie and NFC scanning do not support the dynamic runtime language customization using the withLanguage parameter. These components always use the device language. **Hence, our recommended best practice for optimal user experience is to allow the SDK to use the device language instead of the preferredlanguage parameter.**

@@ -8,6 +8,7 @@
 - [Integration](#integration)
   - [AAR library](#aar-library)
   - [RenderScript](#renderscript)
+- [Language Support](#languagesupport)
 - [Usage example](#usage-example)
   - [Binding key](#binding-key)
 - [Integrate the NFC dependency](#integrate-the-nfc-dependency)

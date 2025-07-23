@@ -157,7 +157,7 @@ Setting the withLanguage parameter (optional) tells the SDK the language in whic
 ### Language limitations
 3rd Party components such as Video Selfie and NFC scanning do not support the dynamic runtime language customization using the withLanguage parameter. These components always use the device language. **Hence, our recommended best practice for optimal user experience is to allow the SDK to use the device language instead of the preferredlanguage parameter.**
 
-
+Using withLanguage("lang_code") you can configure the IDnow library to use a specific language. These ISO 639-1 language codes are currently supported: bg (Bulgarian), cs (Czech), da (Danish), de (German), el (Greek), en (English), es (Spanish), et (Estonian), fi (Finnish), fr (French), hr (Croatian), hu (Hungarian), it (Italian), ja (Japanese), ka (Georgian), ko (Korean), lt (Lithuanian), lv (Latvian), nb (Norwegian), nl (Dutch), pl (Polish), pt (Portuguese), ro (Romanian), ru (Russian), sk (Slovak), sl (Slovenian), sr (Serbian-Latin), sv (Swedish), tr (Turkish), zh (Chinese).
 
 ## Usage example
 
@@ -205,7 +205,6 @@ public class IDnowAutoIdentActivity extends AppCompatActivity implements IDnowSD
 }
 ```
 
-Using withLanguage("lang_code") you can configure the IDnow library to use a specific language. These ISO 639-1 language codes are currently supported: bg (Bulgarian), cs (Czech), da (Danish), de (German), el (Greek), en (English), es (Spanish), et (Estonian), fi (Finnish), fr (French), hr (Croatian), hu (Hungarian), it (Italian), ja (Japanese), ka (Georgian), ko (Korean), lt (Lithuanian), lv (Latvian), nb (Norwegian), nl (Dutch), pl (Polish), pt (Portuguese), ro (Romanian), ru (Russian), sk (Slovak), sl (Slovenian), sr (Serbian), sv (Swedish), tr (Turkish), zh (Chinese).
 
 ### Binding Key
 BindingKey is a additional parameter that can be sent by customers when initializing the SDK. It can be used for device binding use cases and helps establish a correlation between a user's verified identity and their mobile device. It is particularly useful for device authentication and re-authentication scenarios when users change devices. BindingKey for a completed identification can be fetched via an API endpoint and compared with the one that was used during SDK initialization.

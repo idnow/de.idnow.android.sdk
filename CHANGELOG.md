@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 5.14.1 - 30 Jul 2025
+- Fix for null name when starting an Ident
+
 #### 5.14.0 - 4 Jul 2025
 - Option to capture image of passport signature page
 - Updated components - Liveness, NFC scanning

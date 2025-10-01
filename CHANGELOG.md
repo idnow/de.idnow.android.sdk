@@ -1,5 +1,9 @@
 ## Changelog
 
+#### 5.15.0 - 1 Oct 2025
+- Added support for 16KB memory page size
+- Updated Liveness and NFC scanning components
+
 #### 5.14.1 - 30 Jul 2025
 - Fix for null name when starting an Ident
 

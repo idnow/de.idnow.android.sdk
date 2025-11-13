@@ -1,7 +1,7 @@
 ## Changelog
 
 #### 5.16.0 - 13 Nov 2025
-- Manual capture mode for 2nd page Signature Capture feature
+- Manual capture mode for 2nd page Signature Capture feature (Frontend only)
 - Updated Liveness component to fix Android 8 crash and Class obfuscation issue
 - Bug and Crash Fixes
 

@@ -1,5 +1,10 @@
 ## Changelog
 
+#### 5.16.0 - 13 Nov 2025
+- Manual capture mode for 2nd page Signature Capture feature
+- Updated Liveness component to fix Android 8 crash and Class obfuscation issue
+- Bug and Crash Fixes
+
 #### 5.15.0 - 1 Oct 2025
 - Added support for 16KB memory page size
 - Updated Liveness and NFC scanning components

@@ -1,5 +1,12 @@
 ## Changelog
 
+#### 5.17.0 - 12 Dec 2025
+- Improved analytics event tracking for additional use cases
+- Improved device compatibility during document capture step
+- Logging improvements related to NFC scanning
+- Updated NFC scanning component
+- Bug fixes
+
 #### 5.16.0 - 13 Nov 2025
 - Manual capture mode for 2nd page Signature Capture feature (Frontend only)
 - Updated Liveness component to fix Android 8 crash and Class obfuscation issue

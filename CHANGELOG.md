@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 5.17.1 - 04 Feb 2026
+- Crash fixes
+
 #### 5.17.0 - 12 Dec 2025
 - Improved analytics event tracking for additional use cases
 - Improved device compatibility during document capture step

@@ -1,5 +1,10 @@
 ## Changelog
 
+#### 5.18.0 - 24 Feb 2026
+- Improved support for Android 16
+- Updated liveness detection component
+- Updated NFC scanning component
+
 #### 5.17.1 - 04 Feb 2026
 - Crash fixes
 

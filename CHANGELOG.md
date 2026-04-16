@@ -1,5 +1,14 @@
 ## Changelog
 
+#### 5.19.0 - 16 Apr 2026
+- Updated Liveness components
+- Fix for white screens on User Abort screen
+- Support for Greek language in Liveness and NFC steps
+- Support for longer IdentID Tokens
+- Updated TensorFlow library
+- Crash fix
+- Bug fixes
+
 #### 5.18.0 - 24 Feb 2026
 - Improved support for Android 16
 - Updated liveness detection component

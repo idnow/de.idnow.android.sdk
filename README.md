@@ -31,8 +31,8 @@ Please refer to the following link to find information about current versions, c
 
 - AndroidX for IDnow library version 4.0.0 and beyond: https://developer.android.com/jetpack/androidx
 - minSdkVersion: 24 (Android 7 Nougat)
-- compileSdkVersion: 35 (Android 15)
-- targetSdkVersion: 35 (Android 15)
+- compileSdkVersion: 36 (Android 16)
+- targetSdkVersion: 36 (Android 16)
 - **not supported: devices and emulators based on the x86 architecture**
 
 ### Android manifest
@@ -113,14 +113,14 @@ In the app module's build.gradle, besides whatever other dependencies you alread
 
 ```
 dependencies {
-    implementation 'de.idnow.android.sdk:idnow-platform:5.18.0' // replace "5.18.0" with the version you want to include
+    implementation 'de.idnow.android.sdk:idnow-platform:5.19.0' // replace "5.19.0" with the version you want to include
 }
 ```
 
 #### NOTE: We also supply a special build of our AI SDK, which is a 1:1 copy of the official version, but it does not contain the FintecSystems SDK. This one can be integrated using the next line:
 ```
 dependencies {
-    implementation 'de.idnow.android.sdk:idnow-platform-no-fintec-XS2A:5.18.0' // replace "5.18.0" with the version you want to include
+    implementation 'de.idnow.android.sdk:idnow-platform-no-fintec-XS2A:5.19.0' // replace "5.19.0" with the version you want to include
 }
 ```
 

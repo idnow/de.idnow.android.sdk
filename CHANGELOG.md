@@ -1,5 +1,9 @@
 ## Changelog
 
+#### 5.21.0 - 23 Jul 2026
+- Improved user feedback messaging for disallowed documents
+- NFC session handling improvements
+
 #### 5.20.0 - 02 Jul 2026
 - Fixed an issue where security-feature video frames could appear distorted, leading to incorrect fraud classifications and reduced conversion rates.
 - Resolved a crash that could occur during the additional document step on certain integrations.

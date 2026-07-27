@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 5.21.1 - 27 Jul 2026
+- Fix for NFC fallback to Hologram detection step
+
 #### 5.21.0 - 23 Jul 2026
 - Improved user feedback messaging for disallowed documents
 - NFC session handling improvements

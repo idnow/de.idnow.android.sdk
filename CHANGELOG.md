@@ -1,5 +1,9 @@
 ## Changelog
 
+#### 5.22.0 - 14 Jul 2026
+- Updated Liveness component
+- Bug fixes
+
 #### 5.21.1 - 27 Jul 2026
 - Fix for NFC fallback to Hologram detection step
 

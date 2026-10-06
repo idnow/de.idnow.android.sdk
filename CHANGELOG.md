@@ -1,5 +1,8 @@
 ## Changelog
 
+#### 5.23.0 - 05 Oct 2026
+- SDK variant with the Liveness package as a separate dependency; allows it to be excluded during integration.
+
 #### 5.22.0 - 14 Jul 2026
 - Updated Liveness component
 - Bug fixes

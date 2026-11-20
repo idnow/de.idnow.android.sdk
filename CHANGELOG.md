@@ -3,7 +3,7 @@
 #### 5.24.1 - 20 Nov 2026
 - Fixed incorrect display of NFC success animation when using unsupported cards.
 - Improved visibility and contrast of the Quit button on the NFC screen.
-- Upgraded NFC component version to M131.
+- Updated NFC component version to M131.
 - Updated French translations for the NFC scanning flow.
 - Replaced the default font with Red Hat Display.
 

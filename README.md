@@ -113,14 +113,14 @@ In the app module's build.gradle, besides whatever other dependencies you alread
 
 ```
 dependencies {
-    implementation 'de.idnow.android.sdk:idnow-platform:5.23.0' // replace "5.23.0" with the version you want to include
+    implementation 'de.idnow.android.sdk:idnow-platform:5.24.1' // replace "5.24.1" with the version you want to include
 }
 ```
 
 #### NOTE: We also supply a special build of our AI SDK, which is a 1:1 copy of the official version, but it does not contain the FintecSystems SDK. This one can be integrated using the next line:
 ```
 dependencies {
-    implementation 'de.idnow.android.sdk:idnow-platform-no-fintec-XS2A:5.23.0' // replace "5.23.0" with the version you want to include
+    implementation 'de.idnow.android.sdk:idnow-platform-no-fintec-XS2A:5.24.1' // replace "5.24.1" with the version you want to include
 }
 ```
 
@@ -248,32 +248,47 @@ repositories {
 ```groovy
     //ReadID Dependencies
     //iddoc connector
-    implementation 'com.google.code.gson:gson:2.11.0'
-    implementation 'androidx.annotation:annotation:1.5.0'
-    implementation 'org.bouncycastle:bcpkix-jdk18on:1.78.1'
+    implementation 'com.google.code.gson:gson:2.13.1'
+    implementation 'androidx.annotation:annotation:1.9.1'
+    implementation 'org.bouncycastle:bcpkix-jdk18on:1.85'
     //readid mrz
-    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.8.6'
-    implementation ('com.google.android.gms:play-services-tflite-java:16.1.0') {
+    implementation 'androidx.camera:camera-camera2:1.4.2'
+    implementation 'androidx.camera:camera-core:1.4.2'
+    implementation 'androidx.camera:camera-lifecycle:1.4.2'
+    implementation 'androidx.camera:camera-view:1.4.2'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.8.7'
+    implementation ('com.google.android.gms:play-services-tflite-java:16.4.0') {
         exclude group: "org.tensorflow"
     }
     //readid core
-    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.9.24'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:2.2.21'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0'
+    implementation 'androidx.core:core-ktx:1.13.1'
+    implementation 'androidx.window:window:1.5.0'
+    implementation 'androidx.startup:startup-runtime:1.2.0'
     implementation 'net.sf.scuba:scuba-sc-android:0.0.26'
     implementation 'net.sf.scuba:scuba-smartcards:0.0.20'
     implementation 'edu.ucar:jj2000:5.2'
+    implementation 'org.jmrtd:jmrtd:0.8.7'
     implementation("org.ejbca.cvc:cert-cvc:1.4.13") {
         exclude group: 'org.bouncycastle', module: 'bcprov-jdk15on'
     }
-    implementation 'org.jmrtd:jmrtd:0.7.42'
     //readid ui core
-    implementation 'androidx.fragment:fragment:1.8.1'
+    implementation 'androidx.activity:activity-compose:1.9.3'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7'
+    implementation 'androidx.compose.ui:ui-viewbinding:1.11.4'
+    implementation 'androidx.compose.animation:animation-graphics:1.11.4'
+    implementation 'androidx.compose.material3:material3:1.4.0'
+    implementation 'androidx.compose.material3.adaptive:adaptive:1.2.0'
+    implementation 'com.google.android.material:compose-theme-adapter:1.2.1'
+    implementation 'androidx.fragment:fragment-ktx:1.8.6'
     implementation 'androidx.preference:preference-ktx:1.2.1'
     implementation 'com.google.android.material:material:1.12.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'androidx.databinding:viewbinding:8.5.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+    implementation 'androidx.databinding:viewbinding:9.0.1'
+    implementation 'androidx.activity:activity-ktx:1.9.3'
     //viz capture
     implementation "com.google.mlkit:barcode-scanning:17.3.0"
-    implementation "com.google.mlkit:face-detection:16.1.7"
     //end
 ```
 - add the following proguard rules in your application's `proguard-rules.pro` file
@@ -297,6 +312,13 @@ repositories {
 -dontwarn org.jmrtd.jj2000.**
 -dontwarn org.jnbis.imageio.*
 ```
+
+**Note:** In case you receive the following error while building your app:
+- `3 files found with path 'META-INF/versions/9/OSGI-INF/MANIFEST.MF'.`
+```
+2 files found with path 'META-INF/LICENSE.md' from inputs:
+- org.bouncycastle:bcutil-jdk18on:1.85/bcutil-jdk18on-1.85.jar
+- org.bouncycastle:bcprov-jdk18on:1.85/bcprov-jdk18on-1.85.jar
 
 ### Note:
 Our recommended best practice for optimal user experience is to allow the SDK to use the device language instead of the lang_code.
